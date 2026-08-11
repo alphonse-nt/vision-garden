@@ -1,0 +1,1031 @@
+<!DOCTYPE html><html lang="rw"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ibiciro | Vision Garden Company Ltd</title><meta name="description"
+content="Reba ibiciro by'ibicuruzwa na serivisi za Vision Garden Company Ltd na Eden Garden. Tumiza ukoresheje WhatsApp.">
+
+<link rel="stylesheet" href="style.css"></head><body><!-- ==========================================================
+     ANNOUNCEMENT BAR
+========================================================== --><div class="announcement-bar">
+🌱 Vision Garden Company Ltd | 🌱 Ibicuruzwa | 🏡 Eden Garden | 💰 Ibiciro
+</div><!-- ==========================================================
+     HEADER
+========================================================== --><header class="main-header"><div class="header-container"><!-- LOGO --><a href="index.html" class="logo"><img src="logo.png"
+alt="Vision Garden Company Ltd Logo">
+
+</a><!-- BRAND --><div class="brand"><h1>VISION GARDEN COMPANY LTD</h1><p>Ibiciro by'ibicuruzwa na serivisi</p></div><!-- HEADER ACTIONS --><div class="header-actions"><button
+type="button"
+class="search-btn"
+onclick="openSearch()"
+aria-label="Shakisha">
+
+🔍
+
+</button><button
+type="button"
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Fungura menu">
+
+☰
+
+</button></div><!-- ======================================================
+     MAIN MENU
+====================================================== --><nav id="main-menu"><a href="index.html">
+🏠 Ahabanza
+</a><a href="eden-garden.html">
+🏡 Eden Garden
+</a><a href="serivisi.html">
+🌿 Serivisi
+</a><a href="ibiciro.html">
+💰 Ibiciro
+</a><a href="ibicuruzwa.html">
+🌱 Ibicuruzwa
+</a><a href="amashusho.html">
+📸 Amafoto & Videos
+</a><a href="ubuhamya.html">
+⭐ Ubuhamya
+</a><a href="amatangazo.html">
+📢 Amatangazo
+</a><a href="poromosiyo.html">
+🔥 Poromosiyo
+</a><a href="about.html">
+👥 Abo Turibo
+</a><a href="twandikire.html">
+📞 Twandikire
+</a><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision')">
+
+🛒 Tumiza Ibicuruzwa
+
+</button><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden')">
+
+🍽️ Tumiza muri Eden Garden
+
+</button></nav><!-- ======================================================
+     SEARCH
+====================================================== --><div
+id="search-container"
+class="search-container"><input
+type="text"
+id="siteSearchInput"
+placeholder="Shakisha serivisi cyangwa ibicuruzwa..."
+onkeyup="searchSiteProducts()">
+
+<button
+type="button"
+onclick="searchSiteProducts()">
+
+🔍 Shakisha
+
+</button></div></div></header><!-- ==========================================================
+     LANGUAGE
+========================================================== --><div class="language-box"><a
+href="english/ibiciro.html"
+class="english-btn">
+
+🇬🇧 English Version
+
+</a></div><!-- ==========================================================
+     PRICE INTRO
+========================================================== --><section class="intro-section"><h2>
+💰 IBICIRO BYA VISION GARDEN & EDEN GARDEN
+</h2><p>Hano ushobora kureba ibiciro by'ibicuruzwa, serivisi
+n'ibindi biboneka muri Vision Garden Company Ltd na
+Eden Garden.
+
+Hitamo ibyo ukeneye, urebe igiciro, hanyuma ubashe
+gutumiza ukoresheje WhatsApp.
+
+</p></section><!-- ==========================================================
+     PRICE SECTION
+========================================================== --><section class="popular-section"><!-- COMPANY SWITCH --><div class="media-type-buttons"><button
+type="button"
+class="media-type-btn active"
+onclick="showPriceCompany('vision', this)">
+
+🌱 Vision Garden
+
+</button><button
+type="button"
+class="media-type-btn"
+onclick="showPriceCompany('eden', this)">
+
+🏡 Eden Garden
+
+</button></div><!-- ======================================================
+     SEARCH PRODUCTS
+====================================================== --><div
+class="search-container"
+style="position:relative;top:auto;right:auto;display:flex;flex-direction:column;max-width:500px;margin:20px auto;box-shadow:none;border:1px solid #eee;"><input
+type="text"
+id="priceSearch"
+placeholder="🔍 Shakisha Mango, Avoka, Indimu..."
+onkeyup="filterPriceProducts()">
+
+</div><!-- ======================================================
+     LETTER FILTER
+====================================================== --><div
+class="testimonial-filter-buttons"
+id="priceAlphabet"><button
+type="button"
+class="testimonial-filter-btn active"
+onclick="filterPriceLetter('ALL', this)">
+BYOSE
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('A', this)">
+ABC
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('D', this)">
+DEF
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('G', this)">
+GHI
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('J', this)">
+JKL
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('M', this)">
+MNO
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('P', this)">
+PQR
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('S', this)">
+STU
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('V', this)">
+VWX
+</button>
+
+<button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterPriceLetter('Y', this)">
+YZ
+</button>
+
+</div><!-- ======================================================
+     VISION GARDEN PRODUCTS
+====================================================== --><div
+id="vision-price-section"
+class="card-grid"><!-- PRODUCT --><div
+class="product-card price-product"
+data-company="vision"
+data-name="Avoka"
+data-letter="A"><img
+src="avoka.jpg"
+alt="Avoka"
+class="zoom-img">
+
+<h3>Avoka</h3><p>
+Avoka
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Avoka',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Amacunga"
+data-letter="A"><img
+src="amacunga.jpg"
+alt="Amacunga"
+class="zoom-img">
+
+<h3>Amacunga</h3><p>
+Amacunga
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Amacunga',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Pome"
+data-letter="P"><img
+src="pome.jpg"
+alt="Pome"
+class="zoom-img">
+
+<h3>Pome</h3><p>
+Pome
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Pome',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Inanasi"
+data-letter="I"><img
+src="inanasi.jpg"
+alt="Inanasi"
+class="zoom-img">
+
+<h3>Inanasi</h3><p>
+Inanasi
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Inanasi',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Ibitoki"
+data-letter="I"><img
+src="ibitoki.jpg"
+alt="Ibitoki"
+class="zoom-img">
+
+<h3>Ibitoki</h3><p>
+Ibitoki
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Ibitoki',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Clementine"
+data-letter="C"><img
+src="clementine.jpg"
+alt="Clementine"
+class="zoom-img">
+
+<h3>Clementine</h3><p>
+Clementine
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Clementine',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Apricot"
+data-letter="A"><img
+src="apricot.jpg"
+alt="Apricot"
+class="zoom-img">
+
+<h3>Apricot</h3><p>
+Apricot
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Apricot',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Pomegranate"
+data-letter="P"><img
+src="pomegranate.jpg"
+alt="Pomegranate"
+class="zoom-img">
+
+<h3>Pomegranate</h3><p>
+Pomegranate
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Pomegranate',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Figs"
+data-letter="F"><img
+src="figs.jpg"
+alt="Figs"
+class="zoom-img">
+
+<h3>Figs</h3><p>
+Figs
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Figs',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Guava"
+data-letter="G"><img
+src="guava.jpg"
+alt="Guava"
+class="zoom-img">
+
+<h3>Guava</h3><p>
+Guava
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Guava',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Grenade"
+data-letter="G"><img
+src="grenade.jpg"
+alt="Grenade"
+class="zoom-img">
+
+<h3>Grenade</h3><p>
+Grenade
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Grenade',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="vision"
+data-name="Ingemwe z'inzabibu"
+data-letter="I"><img
+src="inzabibu.jpg"
+alt="Ingemwe z'inzabibu"
+class="zoom-img">
+
+<h3>Ingemwe z'inzabibu</h3><p>
+Ingemwe z'inzabibu
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Ingemwe z inzabibu',1000)">
+
+🛒 Tumiza
+
+</button></div></div><!-- ======================================================
+     EDEN GARDEN PRICES
+====================================================== --><div
+id="eden-price-section"
+class="card-grid"
+style="display:none;"><div
+class="product-card price-product"
+data-company="eden"
+data-name="Voka"
+data-letter="V"><h3>🍹 Voka</h3><p>
+Voka
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Voka',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="eden"
+data-name="Mango Juice"
+data-letter="M"><h3>🥭 Mango Juice</h3><p>
+Mango Juice
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Mango Juice',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="eden"
+data-name="Soft Drink"
+data-letter="S"><h3>🥤 Soft Drink</h3><p>
+Soft Drink
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Soft Drink',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="eden"
+data-name="Amafunguro"
+data-letter="A"><h3>🍽️ Amafunguro</h3><p>
+Amafunguro atandukanye
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Amafunguro',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="eden"
+data-name="Billard"
+data-letter="B"><h3>🎱 Billard</h3><p>
+Umukino wa Billard
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Billard',1000)">
+
+🛒 Tumiza
+
+</button></div><div
+class="product-card price-product"
+data-company="eden"
+data-name="Amacumbi"
+data-letter="A"><h3>🛏️ Amacumbi</h3><p>
+Amacumbi ya Eden Garden
+</p><p>
+<strong>1,000 Frw</strong>
+</p><button
+type="button"
+class="main-btn"
+onclick="addPriceProduct('Amacumbi',1000)">
+
+🛒 Tumiza
+
+</button></div></div><!-- ======================================================
+     PAGINATION
+====================================================== --><div
+id="price-pagination"
+class="media-type-buttons"><button
+type="button"
+class="media-type-btn"
+onclick="pricePreviousPage()">
+
+⬅️
+
+</button><button
+type="button"
+class="media-type-btn active">
+
+1
+
+</button><button
+type="button"
+class="media-type-btn">
+
+2
+
+</button><button
+type="button"
+class="media-type-btn">
+
+3
+
+</button><button
+type="button"
+class="media-type-btn">
+
+4
+
+</button><button
+type="button"
+class="media-type-btn"
+onclick="priceNextPage()">
+
+Komeza ➡️
+
+</button></div></section><!-- ==========================================================
+     ORDER CTA
+========================================================== --><section class="quick-order-section"><h2>
+🛒 Wabonye Ibyo Ukeneye?
+</h2><p>Hitamo ibicuruzwa cyangwa serivisi ushaka,
+hanyuma ukande kuri <strong>Tumiza</strong>.
+Tuzakira ubutumwa bwawe kuri WhatsApp.
+
+</p><div class="quick-order-buttons"><button
+type="button"
+class="main-btn"
+onclick="openUniversalOrder('vision')">
+
+🛒 TUMIZA NONAHA
+
+</button></div></section><!-- ==========================================================
+     UNIVERSAL ORDER MODAL
+========================================================== --><div
+id="universalOrderModal"
+class="order-modal"><div class="order-modal-box"><button
+type="button"
+class="order-close"
+onclick="closeUniversalOrder()">
+
+×
+
+</button><div class="order-header"><h2>
+🌱 Order ya Vision Garden
+</h2><p>
+Hitamo ibyo ukeneye.
+</p></div><div class="order-progress"><span class="active">1</span>
+
+<span>2</span>
+
+<span>3</span>
+
+</div><div
+class="universal-order-step"
+id="universalStep1"><h3>
+📋 Hitamo Ibyo Ukeneye
+</h3><div
+class="order-products"
+id="universalOrderProducts"><!-- JS izashyiramo products hano --></div><div class="order-navigation"><button
+type="button"
+class="order-next"
+onclick="nextUniversalOrderStep()">
+
+Komeza ➡️
+
+</button></div></div><div
+class="universal-order-step"
+id="universalStep2"
+style="display:none;"><h3>
+📝 Amakuru yawe
+</h3><label>
+Amazina
+</label><input
+type="text"
+id="orderName"
+placeholder="Andika amazina yawe">
+
+<label>
+Telephone
+</label><input
+type="tel"
+id="orderPhone"
+placeholder="07XXXXXXXX">
+
+<label>
+Aho ugezwaho
+</label><input
+type="text"
+id="orderLocation"
+placeholder="Aho ushaka ko tubigeza">
+
+<label>
+Andi makuru
+</label><textarea
+id="orderNote"
+placeholder="Andika andi makuru niba ahari..."></textarea><div class="order-navigation"><button
+type="button"
+class="order-back"
+onclick="previousUniversalOrderStep()">
+
+⬅️ Subira
+
+</button><button
+type="button"
+class="order-next"
+onclick="nextUniversalOrderStep()">
+
+Komeza ➡️
+
+</button></div></div><div
+class="universal-order-step"
+id="universalStep3"
+style="display:none;"><h3>
+✅ Emeza ibyo watumije
+</h3><div
+id="selectedOrderItems"
+class="selected-order-items"></div><div class="order-final-total"><span>
+Total
+</span><strong id="orderFinalTotal">
+0 Frw
+</strong></div><div class="order-navigation"><button
+type="button"
+class="order-back"
+onclick="previousUniversalOrderStep()">
+
+⬅️ Subira
+
+</button><button
+type="button"
+class="order-send"
+onclick="sendUniversalOrderToWhatsApp()">
+
+📲 Ohereza kuri WhatsApp
+
+</button></div></div></div></div><!-- ==========================================================
+     FOOTER
+========================================================== --><footer class="vision-footer"><h3>
+🌱 Vision Garden Company Ltd
+</h3><p>Ingemwe z'imbuto, ibiti by'amashyamba,
+indabo, ubusitani, landscaping, ubujyanama
+na serivisi za Eden Garden.
+
+</p><div class="footer-links"><a href="index.html">
+🏠 Ahabanza
+</a><a href="ibicuruzwa.html">
+🌱 Ibicuruzwa
+</a><a href="serivisi.html">
+🌿 Serivisi
+</a><a href="ibiciro.html">
+💰 Ibiciro
+</a><a href="eden-garden.html">
+🏡 Eden Garden
+</a><a href="amashusho.html">
+📸 Amafoto
+</a><a href="ubuhamya.html">
+⭐ Ubuhamya
+</a><a href="amatangazo.html">
+📢 Amatangazo
+</a><a href="poromosiyo.html">
+🔥 Poromosiyo
+</a><a href="about.html">
+👥 Abo Turibo
+</a><a href="twandikire.html">
+📞 Twandikire
+</a></div><p class="copyright">© 2026 Vision Garden Company Ltd.
+Uburenganzira bwose burabitswe.
+
+</p></footer><!-- ==========================================================
+     FLOATING BUTTONS
+========================================================== --><div class="floating-buttons"><a
+href="https://wa.me/250781632705"
+class="whatsapp-float"
+target="_blank"
+aria-label="WhatsApp">
+
+💬
+
+</a><a
+href="tel:+250781632705"
+class="phone-float"
+aria-label="Hamagara">
+
+📞
+
+</a></div><!-- ==========================================================
+     JAVASCRIPT
+========================================================== --><script src="script.js"></script><!-- ==========================================================
+     PRICE PAGE FUNCTIONS
+========================================================== --><script>
+
+let currentPriceCompany = "vision";
+let currentPriceLetter = "ALL";
+
+
+function showPriceCompany(company, button){
+
+currentPriceCompany = company;
+
+const vision =
+document.getElementById("vision-price-section");
+
+const eden =
+document.getElementById("eden-price-section");
+
+if(company === "vision"){
+
+vision.style.display = "grid";
+eden.style.display = "none";
+
+}else{
+
+vision.style.display = "none";
+eden.style.display = "grid";
+
+}
+
+
+document
+.querySelectorAll(".media-type-btn")
+.forEach(btn => {
+
+if(btn === button){
+
+btn.classList.add("active");
+
+}else{
+
+if(
+btn.textContent.includes("Vision") ||
+btn.textContent.includes("Eden")
+){
+
+btn.classList.remove("active");
+
+}
+
+}
+
+});
+
+
+filterPriceProducts();
+
+}
+
+
+function filterPriceLetter(letter, button){
+
+currentPriceLetter = letter;
+
+document
+.querySelectorAll("#priceAlphabet .testimonial-filter-btn")
+.forEach(btn => {
+
+btn.classList.remove("active");
+
+});
+
+button.classList.add("active");
+
+filterPriceProducts();
+
+}
+
+
+function filterPriceProducts(){
+
+const searchInput =
+document.getElementById("priceSearch");
+
+const search =
+searchInput ?
+searchInput.value.toLowerCase().trim() :
+"";
+
+
+const products =
+document.querySelectorAll(".price-product");
+
+
+products.forEach(product => {
+
+const company =
+product.dataset.company;
+
+const name =
+(product.dataset.name || "").toLowerCase();
+
+const letter =
+product.dataset.letter || "";
+
+
+let show = true;
+
+
+if(company !== currentPriceCompany){
+
+show = false;
+
+}
+
+
+if(
+currentPriceLetter !== "ALL" &&
+!letter.includes(currentPriceLetter)
+){
+
+show = false;
+
+}
+
+
+if(
+search &&
+!name.includes(search)
+){
+
+show = false;
+
+}
+
+
+product.style.display =
+show ? "" : "block";
+
+if(!show){
+
+product.style.display = "none";
+
+}
+
+});
+
+}
+
+
+function addPriceProduct(name, price){
+
+/*
+  Duza gukoresha universal order system
+  ya script.js isanzwe.
+*/
+
+if(typeof openUniversalOrder === "function"){
+
+openUniversalOrder("vision");
+
+setTimeout(function(){
+
+const products =
+document.querySelectorAll(
+"#universalOrderProducts .order-product"
+);
+
+products.forEach(product => {
+
+const text =
+product.textContent.toLowerCase();
+
+if(
+text.includes(name.toLowerCase())
+){
+
+const checkbox =
+product.querySelector("input");
+
+if(checkbox && !checkbox.checked){
+
+checkbox.checked = true;
+
+}
+
+}
+
+});
+
+},300);
+
+}else{
+
+alert(
+"Order system ntiraboneka. Reba niba script.js iri kuri iyi page."
+);
+
+}
+
+}
+
+
+function searchSiteProducts(){
+
+const input =
+document.getElementById("siteSearchInput");
+
+if(!input){
+
+return;
+
+}
+
+const value =
+input.value.toLowerCase().trim();
+
+
+if(value === ""){
+
+return;
+
+}
+
+
+const priceSearch =
+document.getElementById("priceSearch");
+
+if(priceSearch){
+
+priceSearch.value = value;
+
+filterPriceProducts();
+
+}
+
+}
+
+
+function priceNextPage(){
+
+window.scrollTo({
+
+top:
+document.querySelector(".popular-section")
+.offsetTop,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+function pricePreviousPage(){
+
+window.scrollTo({
+
+top:
+document.querySelector(".popular-section")
+.offsetTop,
+
+behavior:"smooth"
+
+});
+
+}
+
+
+document.addEventListener(
+"DOMContentLoaded",
+function(){
+
+filterPriceProducts();
+
+}
+);
+
+</script></body></html>
