@@ -1,0 +1,669 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Eden Garden | Vision Garden Company Ltd</title><meta name="description"
+content="Eden Garden is a beautiful place to relax, dine, have fun and stay overnight. Restaurant, food, drinks, billiards, accommodation and parking.">
+
+<link rel="stylesheet" href="../style.css"><link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head><body><!-- ==================================================
+     ANNOUNCEMENT BAR
+================================================== --><div class="announcement-bar">📢 Welcome to Eden Garden 🏡
+| 🍽️ Delicious Food
+| 🛏️ Accommodation
+| 🎱 Entertainment
+
+</div><!-- ==================================================
+     HEADER
+================================================== --><header class="main-header"><div class="header-container"><div class="logo"><img
+src="../logo1.png"
+alt="Vision Garden Company Ltd Logo">
+
+</div><div class="brand"><h1>
+Vision Garden Company Ltd
+</h1><p>
+Eden Garden — A place to relax and have fun
+</p></div><div class="header-actions"><button
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Open menu">
+
+☰
+
+</button><button
+class="search-btn"
+onclick="openSearch()"
+aria-label="Search">
+
+🔍
+
+</button></div><div
+class="search-container"
+id="searchBox"><input
+type="text"
+id="searchInput"
+placeholder="Search for services or anything you need...">
+
+<button onclick="searchSite()">
+Search
+</button></div></div><!-- ==================================================
+     MAIN MENU
+================================================== --><nav id="main-menu"><a href="index.html">
+🏠 Home
+</a><a href="eden-garden.html">
+🏡 Eden Garden
+</a><a href="services.html">
+🌿 Services
+</a><a href="prices.html">
+💰 Prices
+</a><a href="gallery.html">
+📸 Photos & Videos
+</a><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision'); toggleMenu();">
+
+🛒 Order (Vision)
+
+</button><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden'); toggleMenu();">
+
+🍽️ Order (Eden)
+
+</button><a href="testimonials.html">
+⭐ Testimonials
+</a><a href="announcements.html">
+📢 Announcements
+</a><a href="promotions.html">
+🎁 Promotions
+</a><a href="about.html">
+👥 About Us
+</a><a href="contact.html">
+📞 Contact Us
+</a></nav></header><!-- ==================================================
+     LANGUAGE
+================================================== --><div class="language-box"><a
+href="../edeni-garden.html"
+class="english-btn">
+
+🇷🇼 Kinyarwanda Version
+
+</a></div><!-- ==================================================
+     EDEN HERO
+================================================== --><section
+class="hero-slider"
+id="eden-slider"><!-- SLIDE 1 --><div class="hero-slide active"><img
+src="../edeni-garden.jpeg"
+alt="Eden Garden"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🏡 Welcome to Eden Garden
+</h2><p>
+A beautiful place to relax,
+dine, have fun
+and enjoy warm hospitality.
+</p><button
+class="main-btn"
+onclick="openUniversalOrder('eden')">
+
+🍽️ Order from Eden Garden
+
+</button></div></div><!-- SLIDE 2 --><div class="hero-slide"><img
+src="../kurya.jpeg"
+alt="Delicious food at Eden Garden"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🍽️ Delicious Food
+</h2><p>
+We prepare delicious meals
+that are perfect for families
+and friends.
+</p><a
+href="#food"
+class="main-btn">
+
+🍽️ View Menu
+
+</a></div></div><!-- SLIDE 3 --><div class="hero-slide"><img
+src="../billard.jpeg"
+alt="Billiards at Eden Garden"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🎱 Entertainment
+</h2><p>
+Come and have fun,
+play billiards
+and spend quality time with friends.
+</p><a
+href="#billiards"
+class="main-btn">
+
+🎱 View Billiards
+
+</a></div></div><!-- SLIDE 4 --><div class="hero-slide"><img
+src="../amacumbi.jpeg"
+alt="Accommodation at Eden Garden"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🛏️ Comfortable Accommodation
+</h2><p>
+A clean, peaceful
+and secure place to stay.
+</p><a
+href="#accommodation"
+class="main-btn">
+
+🛏️ View Accommodation
+
+</a></div></div><!-- SLIDE 5 --><div class="hero-slide"><img
+src="../parking.jpg"
+alt="Parking at Eden Garden"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🅿️ Spacious and Secure Parking
+</h2><p>
+Our guests have a safe
+and convenient place
+to park their vehicles.
+</p></div></div><button
+class="hero-prev"
+aria-label="Previous">
+
+❮
+
+</button><button
+class="hero-next"
+aria-label="Next">
+
+❯
+
+</button><div class="hero-dots"></div></section><!-- ==================================================
+     QUICK ACTIONS
+================================================== --><section class="quick-actions"><h2>
+🎯 What would you like to do?
+</h2><div class="quick-action-grid"><button
+class="quick-card"
+onclick="openUniversalOrder('eden')">
+
+🍽️
+
+<strong>
+Order Food
+</strong><span>
+Place your order
+</span></button><a
+href="#food"
+class="quick-card">
+
+🍴
+
+<strong>
+View Menu
+</strong><span>
+Food and drinks
+</span></a><a
+href="#accommodation"
+class="quick-card">
+
+🛏️
+
+<strong>
+Accommodation
+</strong><span>
+A comfortable place to stay
+</span></a><a
+href="#billiards"
+class="quick-card">
+
+🎱
+
+<strong>
+Billiards
+</strong><span>
+Entertainment with friends
+</span></a></div></section><!-- ==================================================
+     INTRO
+================================================== --><section class="intro-section"><h2>
+🏡 Eden Garden
+</h2><p>
+Eden Garden is a place designed for you
+to relax, dine, have fun and spend quality
+time with friends and family.We offer food and drinks,
+accommodation, billiards, parking
+and a beautiful place to relax.
+
+</p></section><!-- ==================================================
+     OUR SERVICES
+================================================== --><section class="services-section"><h2>
+🌿 EDEN GARDEN SERVICES
+</h2><p>
+Choose the service you are interested in
+and discover more about what we offer.
+</p><div class="service-grid"><!-- FOOD --><div
+class="service-card"
+id="food"><img
+src="../kurya2.jpeg"
+alt="Food at Eden Garden">
+
+<h3>
+🍽️ Food
+</h3><p>
+We prepare different types of meals,
+including traditional Rwandan dishes,
+with cleanliness and at affordable prices.
+</p><button
+class="small-btn"
+onclick="openUniversalOrder('eden')">
+
+🍽️ Order Food
+
+</button></div><!-- DRINKS --><div class="service-card"><img
+src="../bisembuye.jpeg"
+alt="Restaurant and drinks">
+
+<h3>
+🥤 Drinks
+</h3><p>
+We offer a variety of drinks
+to help you enjoy your time
+at Eden Garden.
+</p><button
+class="small-btn"
+onclick="openUniversalOrder('eden')">
+
+🍹 Order
+
+</button></div><!-- LODGE --><div
+class="service-card"
+id="accommodation"><img
+src="../bed.jpg"
+alt="Accommodation">
+
+<h3>
+🛏️ Accommodation
+</h3><p>
+A safe, clean and peaceful place
+to stay for individuals
+or groups.
+</p><button
+class="small-btn"
+onclick="openUniversalOrder('eden')">
+
+🛏️ Ask About Accommodation
+
+</button></div><!-- BILLARD --><div
+class="service-card"
+id="billiards"><img
+src="../billard2.jpeg"
+alt="Billiards">
+
+<h3>
+🎱 Billiards
+</h3><p>
+Enjoy quality entertainment
+and play billiards with friends
+and family.
+</p><button
+class="small-btn"
+onclick="openUniversalOrder('eden')">
+
+🎱 Order at Eden
+
+</button></div><!-- PARKING --><div class="service-card"><img
+src="../parkinig.jpg"
+alt="Parking">
+
+<h3>
+🅿️ Parking
+</h3><p>
+Spacious and secure parking
+for our guests.
+</p></div><!-- REST --><div class="service-card"><img
+src="../kuruhuka.jpg"
+alt="Relaxing area">
+
+<h3>
+🌿 Relaxation
+</h3><p>
+Come, breathe, relax
+and enjoy your time
+at Eden Garden.
+</p></div></div><button
+class="main-btn"
+onclick="openUniversalOrder('eden')">
+
+🍽️ Order from Eden Garden
+
+</button></section><!-- ==================================================
+     WHY EDEN GARDEN
+================================================== --><section class="why-section"><button
+class="why-toggle"
+onclick="toggleWhyUs()">
+
+⭐ WHY CHOOSE EDEN GARDEN?
+
+</button><div
+id="why-content"
+class="why-content"><div class="why-card"><img
+src="../kurya2.jpeg"
+alt="Food">
+
+<h3>
+🍽️ DELICIOUS FOOD
+</h3><p>
+We prepare delicious and
+well-prepared meals, including
+traditional Rwandan dishes.
+</p></div><div class="why-card"><img
+src="../kuruhuka.jpg"
+alt="Relaxation">
+
+<h3>
+🌿 A PLACE TO RELAX
+</h3><p>
+Eden Garden provides a beautiful
+place to relax and enjoy
+your time.
+</p></div><div class="why-card"><img
+src="../billard2.jpeg"
+alt="Billiards">
+
+<h3>
+🎱 ENTERTAINMENT
+</h3><p>
+Come with friends and family,
+have fun and enjoy
+quality time together.
+</p></div><div class="why-card"><img
+src="../bed.jpg"
+alt="Accommodation">
+
+<h3>
+🛏️ COMFORTABLE ACCOMMODATION
+</h3><p>
+A clean, peaceful and secure
+place to stay at a reasonable price.
+</p></div><div class="why-card"><img
+src="../parkinig.jpg"
+alt="Parking">
+
+<h3>
+🅿️ AMPLE PARKING
+</h3><p>
+Spacious and secure parking
+for our guests.
+</p></div><div class="why-card"><img
+src="../edeni-garden.jpeg"
+alt="Eden Garden">
+
+<h3>
+🤝 WARM HOSPITALITY
+</h3><p>
+Our goal is to provide excellent
+service and make sure you leave
+happy and satisfied.
+</p></div></div></section><!-- ==================================================
+     EDEN GALLERY
+================================================== --><section class="popular-section"><h2>
+📸 Eden Garden in Pictures
+</h2><div class="card-grid"><div class="product-card"><img
+src="../edeni-garden.jpeg"
+alt="Eden Garden">
+
+<h3>
+🏡 Eden Garden
+</h3><p>
+A beautiful place to relax
+and enjoy your time.
+</p></div><div class="product-card"><img
+src="../kurya.jpeg"
+alt="Food">
+
+<h3>
+🍽️ Food
+</h3><p>
+Well-prepared and delicious meals.
+</p></div><div class="product-card"><img
+src="../amacumbi.jpeg"
+alt="Accommodation">
+
+<h3>
+🛏️ Accommodation
+</h3><p>
+A peaceful and clean place to stay.
+</p></div><div class="product-card"><img
+src="../billard.jpeg"
+alt="Billiards">
+
+<h3>
+🎱 Billiards
+</h3><p>
+Entertainment and quality time
+with friends.
+</p></div></div><a
+href="gallery.html"
+class="main-btn">
+
+📸 View Photos & Videos
+
+</a></section><!-- ==================================================
+     LOCATION
+================================================== --><section class="location-section"><h2>
+📍 WHERE EDEN GARDEN IS LOCATED
+</h2><p>
+Want to visit us?
+Find Eden Garden on Google Maps.
+</p><a
+href="https://www.google.com/maps/search/?api=1&query=Eden+Garden+Rwanda"
+target="_blank"
+rel="noopener"
+class="main-btn">
+
+📍 OPEN GOOGLE MAPS
+
+</a></section><!-- ==================================================
+     CONTACT CTA
+================================================== --><section class="contact-cta"><h2>
+📞 Have a question or want to place an order?
+</h2><p>
+Contact us or use WhatsApp
+to place your order.
+</p><div class="cta-buttons"><a
+href="contact.html"
+class="main-btn">
+
+📞 Contact Us
+
+</a><button
+class="main-btn"
+onclick="openUniversalOrder('eden')">
+
+🍽️ Order Now
+
+</button></div></section><!-- ==================================================
+     UNIVERSAL ORDER MODAL
+================================================== --><div
+id="universalOrderModal"
+class="order-modal"><div class="order-modal-box"><button
+class="order-close"
+onclick="closeUniversalOrder()">
+
+×
+
+</button><div class="order-header"><h2 id="orderTitle">
+🍽️ Eden Garden
+</h2><p id="orderDescription">
+Choose what you would like from Eden Garden.
+</p></div><!-- STEP 1 --><div
+class="universal-order-step"
+id="universalStep1"><div class="order-progress"><span class="active">1</span>
+
+<span>2</span>
+
+<span>3</span>
+
+</div><h3>
+📋 Choose what you want
+</h3><div
+id="orderProducts"
+class="order-products">
+</div><button
+class="main-btn order-next-btn"
+onclick="nextUniversalOrderStep(2)">
+
+Next ➡️
+
+</button></div><!-- STEP 2 --><div
+class="universal-order-step"
+id="universalStep2"
+style="display:none;"><div class="order-progress"><span class="done">✓</span>
+
+<span class="active">2</span>
+
+<span>3</span>
+
+</div><h3>
+🔢 Review your selection
+</h3><div
+id="selectedOrderItems"
+class="selected-order-items">
+</div><div class="order-total-box"><span>
+💰 Total:
+</span><strong id="orderTotal">
+0 Frw
+</strong></div><div class="order-step-buttons"><button
+class="small-btn"
+onclick="nextUniversalOrderStep(1)">
+
+⬅️ Back
+
+</button><button
+class="main-btn"
+onclick="nextUniversalOrderStep(3)">
+
+Next ➡️
+
+</button></div></div><!-- STEP 3 --><div
+class="universal-order-step"
+id="universalStep3"
+style="display:none;"><div class="order-progress"><span class="done">✓</span>
+
+<span class="done">✓</span>
+
+<span class="active">3</span>
+
+</div><h3>
+📝 Your Information
+</h3><label>
+Your Name
+</label><input
+type="text"
+id="orderCustomerName"
+placeholder="Enter your name">
+
+<label>
+Phone Number
+</label><input
+type="tel"
+id="orderCustomerPhone"
+placeholder="078...">
+
+<label>
+Number of People
+</label><input
+type="number"
+id="orderPeople"
+min="1"
+value="1"
+placeholder="Example: 2">
+
+<label>
+📅 Preferred Date
+</label><input
+type="date"
+id="orderDate">
+
+<label>
+🕐 Preferred Time
+</label><input
+type="time"
+id="orderTime">
+
+<label>
+✍️ Additional Request
+</label><textarea
+id="orderExtraNote"
+placeholder="Example: I have another request that is not on the menu..."></textarea><div class="order-final-total"><span>
+💰 Total of your selection:
+</span><strong id="finalOrderTotal">
+0 Frw
+</strong></div><div class="order-step-buttons"><button
+class="small-btn"
+onclick="nextUniversalOrderStep(2)">
+
+⬅️ Back
+
+</button><button
+class="main-btn"
+onclick="sendUniversalOrder()">
+
+📲 Send via WhatsApp
+
+</button></div></div></div></div><!-- ==================================================
+     FOOTER
+================================================== --><footer class="vision-footer"><h3>
+🌱 Vision Garden Company Ltd
+</h3><p>
+Eden Garden — Restaurant, accommodation,
+entertainment and a beautiful place to relax.
+</p><div class="footer-links"><a href="index.html">
+🏠 Home
+</a><a href="products.html">
+🌱 Products
+</a><a href="services.html">
+🌿 Services
+</a><a href="eden-garden.html">
+🏡 Eden Garden
+</a><a href="prices.html">
+💰 Prices
+</a><a href="gallery.html">
+📸 Photos & Videos
+</a><a href="testimonials.html">
+⭐ Testimonials
+</a><a href="announcements.html">
+📢 Announcements
+</a><a href="promotions.html">
+🎁 Promotions
+</a><a href="about.html">
+👥 About Us
+</a><a href="contact.html">
+📞 Contact Us
+</a></div><p class="copyright">© 2026 Vision Garden Company Ltd.
+All rights reserved.
+
+</p></footer><!-- ==================================================
+     FLOATING BUTTONS
+================================================== --><div class="floating-buttons"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="whatsapp-float">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a><a
+href="tel:0781632705"
+class="phone-float">
+
+<i class="fa-solid fa-phone"></i>
+
+</a></div><!-- ==================================================
+     JAVASCRIPT
+================================================== --><script src="../script.js"></script></body>
+</html>
