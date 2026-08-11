@@ -1,0 +1,805 @@
+<!DOCTYPE html><html lang="rw"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vision Garden Company Ltd</title><meta name="description"
+content="Vision Garden Company Ltd itanga ingemwe z'imbuto, ibiti by'amashyamba, indabo, ubusitani, ubujyanama na serivisi za Eden Garden.">
+
+<link rel="stylesheet" href="style.css"><link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head><body><!-- ==================================================
+     ANNOUNCEMENT BAR
+================================================== --><div class="announcement-bar">
+📢 Murakaza neza muri Vision Garden Company Ltd 🌱
+| Ingemwe nziza zirahari
+| 🏡 Eden Garden irahari
+</div><!-- ==================================================
+     HEADER
+================================================== --><header class="main-header"><div class="header-container"><!-- LOGO --><div class="logo">
+<img
+src="images/logo1.png"
+alt="Vision Garden Company Ltd Logo">
+</div><!-- BRAND --><div class="brand"><h1>
+Vision Garden Company Ltd
+</h1><p>
+Pepiniyeri y'ibiti byiza mu Rwanda
+</p></div><!-- HEADER ACTIONS --><div class="header-actions"><button
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Fungura menu">
+☰
+</button>
+
+<button
+class="search-btn"
+onclick="openSearch()"
+aria-label="Shakisha">
+🔍
+</button>
+
+</div><!-- SEARCH --><div
+class="search-container"
+id="searchBox"><input
+type="text"
+id="searchInput"
+placeholder="Shakisha serivisi cyangwa ibicuruzwa...">
+
+<button onclick="searchSite()">
+Shaka
+</button></div></div><!-- ==================================================
+     MAIN MENU
+================================================== --><nav id="main-menu"><a href="index.html">
+🏠 Ahabanza
+</a><a href="edeni-garden.html">
+🏡 Eden Garden
+</a><a href="serivisi.html">
+🌿 Serivisi
+</a><a href="ibiciro.html">
+💰 Ibiciro
+</a><a href="amashusho.html">
+📸 Amafoto & Videos
+</a><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision'); toggleMenu();">
+🛒 Tumiza (Vision)
+</button>
+
+<button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden'); toggleMenu();">
+🍽️ Tumiza (Eden)
+</button>
+
+<a href="ubuhamya.html">
+⭐ Ubuhamya
+</a><a href="amatangazo.html">
+📢 Amatangazo
+</a><a href="poromosiyo.html">
+🎁 Poromosiyo
+</a><a href="about.html">
+👥 Abo Turibo
+</a><a href="twandikire.html">
+📞 Twandikire
+</a></nav></header><!-- ==================================================
+     LANGUAGE
+================================================== --><div class="language-box"><a
+href="english/index.html"
+class="english-btn">
+
+🇬🇧 English Version
+
+</a></div><!-- ==================================================
+     HERO SLIDER
+================================================== --><section
+class="hero-slider"
+id="vision-slider"><!-- SLIDE 1 --><div class="hero-slide active"><img
+src="images/vision.jpg"
+alt="Vision Garden Company Ltd"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🌱 Vision Garden Company Ltd
+</h2><p>
+Tubafasha kubona ingemwe nziza z'imbuto,
+ibiti by'amashyamba n'ubusitani bwiza.
+</p><a
+href="ibicuruzwa.html"
+class="main-btn">
+
+🌱 Reba Ibicuruzwa
+
+</a></div></div><!-- SLIDE 2 --><div class="hero-slide"><img
+src="images/orange.jpg"
+alt="Ingemwe z'amacunga"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🍊 Ingemwe z'imbuto nziza
+</h2><p>
+Ingemwe zitaweho neza kandi ziteguye
+gutanga umusaruro mwiza.
+</p><a
+href="ibicuruzwa.html"
+class="main-btn">
+
+🌱 Reba Ibicuruzwa
+
+</a></div></div><!-- SLIDE 3 --><div class="hero-slide"><img
+src="images/inturusu.jpeg"
+alt="Ibiti by'amashyamba"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🌳 Ibiti by'amashyamba
+</h2><p>
+Dufasha kurengera ibidukikije
+no guteza imbere gutera ibiti.
+</p></div></div><!-- SLIDE 4 --><div class="hero-slide"><img
+src="images/ubusitani.jpeg"
+alt="Gutunganya ubusitani"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🌿 Gutunganya ubusitani
+</h2><p>
+Dukora ubusitani bwiza ku ngo,
+ibigo n'ahandi hatandukanye.
+</p><a
+href="serivisi.html"
+class="main-btn">
+
+🌿 Reba Serivisi
+
+</a></div></div><button
+class="hero-prev"
+aria-label="Previous">
+❮
+</button>
+
+<button
+class="hero-next"
+aria-label="Next">
+❯
+</button>
+
+<div class="hero-dots"></div></section><!-- ==================================================
+     QUICK ACTIONS
+================================================== --><section class="quick-actions"><h2>
+🎯 Wahitamo iki?
+</h2><div class="quick-action-grid"><a
+href="ibicuruzwa.html"
+class="quick-card">
+
+🌱
+
+<strong>
+Reba Ibicuruzwa
+</strong><span>
+Ingemwe n'ibiti dufite
+</span></a><button
+class="quick-card"
+onclick="openUniversalOrder('vision')">
+
+🛒
+
+<strong>
+Tumiza Ibicuruzwa
+</strong><span>
+Kora order yawe
+</span></button><a
+href="edeni-garden.html"
+class="quick-card">
+
+🏡
+
+<strong>
+Eden Garden
+</strong><span>
+Restaurant, amacumbi n'imyidagaduro
+</span></a><a
+href="twandikire.html"
+class="quick-card">
+
+📞
+
+<strong>
+Twandikire
+</strong><span>
+Tuvugishe cyangwa utubaze
+</span></a></div></section><!-- ==================================================
+     INTRO
+================================================== --><section class="intro-section"><h2>
+🌿 Vision Garden Company Ltd
+</h2><p>
+Tubafasha kubona ingemwe nziza z'imbuto,
+ibiti by'amashyamba, indabo no gutunganya ubusitani.
+Dutanga kandi ubujyanama bwo kubitera,
+kubibyitaho no kubungabunga ibidukikije.
+</p></section><!-- ==================================================
+     POPULAR PRODUCTS
+================================================== --><section class="popular-section"><h2>
+🌱 Ibicuruzwa bikunzwe
+</h2><div class="card-grid"><div class="product-card"><img
+src="images/avoka.jpg"
+alt="Ingemwe za Avoka">
+
+<h3>
+🥑 Ingemwe za Avoka
+</h3><p>
+Ingemwe nziza kandi zitaweho neza.
+</p><a
+href="ibicuruzwa.html"
+class="small-btn">
+
+Reba byinshi
+
+</a></div><div class="product-card"><img
+src="images/mangoes.jpg"
+alt="Ingemwe z'imyembe">
+
+<h3>
+🥭 Ingemwe z'imyembe
+</h3><p>
+Ibiti byera neza kandi bikwiye
+ahantu hatandukanye.
+</p><a
+href="ibicuruzwa.html"
+class="small-btn">
+
+Reba byinshi
+
+</a></div><div class="product-card"><img
+src="images/indabo.jpeg"
+alt="Indabo zo kurimbisha">
+
+<h3>
+🌸 Indabo zo kurimbisha
+</h3><p>
+Zongera ubwiza bw'ingo,
+ibigo n'ahandi hatandukanye.
+</p><a
+href="ibicuruzwa.html"
+class="small-btn">
+
+Reba byinshi
+
+</a></div></div><button
+class="main-btn"
+onclick="openUniversalOrder('vision')">
+
+🛒 Tumiza Ibicuruzwa
+
+</button></section><!-- ==================================================
+     SERVICES
+================================================== --><section class="services-section"><h2>
+🌿 BIMWE MU BYO DUKORA
+</h2><p>
+Dutanga serivisi zifasha abakiriya kubona
+ibiti byiza, gutunganya ubusitani,
+kubona ubujyanama ndetse no kwakirwa neza
+muri Eden Garden.
+</p><div class="service-grid"><div class="service-card"><img
+src="images/ingemwe1.jpg"
+alt="Ingemwe n'ibiti">
+
+<h3>
+🌱 Ingemwe n'ibiti
+</h3><p>
+Dutanga ingemwe z'imbuto,
+ibiti by'amashyamba n'ibiti byo kurimbisha,
+ku giciro gito.
+</p></div><div class="service-card"><img
+src="images/ubusitani.jpeg"
+alt="Ubusitani">
+
+<h3>
+🌿 Gutunganya ubusitani
+</h3><p>
+Dukora ubusitani bukaba bwiza kurushaho
+ku ngo, ibigo, amahoteli n'ahandi hatandukanye.
+Dukora plan y'ubusitani tukakubwira ibiti
+n'ibikoresho wakenera.
+</p></div><div class="service-card"><img
+src="images/inama.jpg"
+alt="Ubujyanama">
+
+<h3>
+👨‍🌾 Ubujyanama
+</h3><p>
+Tugufasha guhitamo ibiti bikwiye,
+kubitera no kubyitaho neza.
+</p></div><div class="service-card"><img
+src="images/ibiryo2.jpeg"
+alt="Eden Garden">
+
+<h3>
+🏡 Eden Garden
+</h3><p>
+Restaurant, amacumbi,
+imyidagaduro n'ahantu ho kuruhukira.
+</p></div><div class="service-card"><img
+src="images/car2.jpg"
+alt="Delivery">
+
+<h3>
+🚚 Twakugezaho ibyo watumije kandi vuba
+</h3><p>
+Yaba muri Vision Garden cyangwa muri Eden Garden,
+tubagezaho ibyo mwaguze vuba bishoboka.
+Vuga uti ndashaka ibi wongereho aho tubigeza.
+</p></div></div><a
+href="serivisi.html"
+class="main-btn">
+
+🌿 Reba Serivisi zose
+
+</a></section><!-- ==================================================
+     EDEN GARDEN
+================================================== --><section class="eden-section"><h2>
+🏡 Eden Garden
+</h2><p class="section-description">
+Ahantu ho kuruhukira,
+gusangira, kwidagadurira no kwakirwa neza.
+</p><div class="eden-slider"><div class="eden-slide active"><img
+src="images/edeni-garden.jpeg"
+alt="Eden Garden">
+
+<div class="eden-content"><h3>
+🌿 Eden Garden
+</h3><p>
+Ahantu heza ho kuruhukira
+no kwishimira umwanya wawe.
+</p><a
+href="edeni-garden.html"
+class="main-btn">
+
+🏡 Injira muri Eden Garden
+
+</a></div></div><div class="eden-slide"><img
+src="images/kurya.jpeg"
+alt="Amafunguro meza">
+
+<div class="eden-content"><h3>
+🍽️ Amafunguro meza
+</h3><p>
+Dutegura amafunguro meza
+kandi ateguye neza.
+</p><a
+href="edeni-garden.html"
+class="main-btn">
+
+🍽️ Reba Menu
+
+</a></div></div><div class="eden-slide"><img
+src="images/billard.jpeg"
+alt="Billard">
+
+<div class="eden-content"><h3>
+🎱 Billard n'imyidagaduro
+</h3><p>
+Ahantu ho kwidagadurira
+n'inshuti n'umuryango.
+</p><a
+href="edeni-garden.html"
+class="main-btn">
+
+🎱 Reba Eden Garden
+
+</a></div></div><div class="eden-slide"><img
+src="images/amacumbi.jpeg"
+alt="Amacumbi">
+
+<div class="eden-content"><h3>
+🛏️ Amacumbi meza
+</h3><p>
+Aho kuruhukira ufite isuku,
+ituze n'umutekano.
+</p><a
+href="edeni-garden.html"
+class="main-btn">
+
+🏡 Reba Amacumbi
+
+</a></div></div><div class="eden-slide"><img
+src="images/parking.jpg"
+alt="Parking">
+
+<div class="eden-content"><h3>
+🅿️ Parking yagutse
+</h3><p>
+Parking ihagije kandi itekanye
+ku bashyitsi bacu.
+</p></div></div><button class="eden-prev">
+❮
+</button><button class="eden-next">
+❯
+</button><div class="eden-dots"></div></div><button
+class="main-btn"
+onclick="openUniversalOrder('eden')">
+
+🍽️ Tumiza muri Eden Garden
+
+</button></section><!-- ==================================================
+     WHY CHOOSE US
+================================================== --><section class="why-section"><button
+class="why-toggle"
+onclick="toggleWhyUs()">
+
+⭐ KUKI WAHITAMO VISION GARDEN NA EDEN GARDEN?
+
+</button><div
+id="why-content"
+class="why-content"><div class="why-card"><img
+src="images/ingemwe2.jpeg"
+alt="Ingemwe nziza">
+
+<h3>
+DUTANGA INGEMWE NZIZA KANDI ZIZEWE
+</h3><p>
+Turi abambere mu Rwanda mu gutegura ingemwe
+kinyamwuga kuva kera cyane.
+Dutanga ingemwe zifite ubuziranenge buhagije.
+</p></div><div class="why-card"><img
+src="images/rab.png"
+alt="Temewe na RAB">
+
+<h3>
+TWEMEWE NA RAB
+</h3><p>
+Kuva muri 2005 twahawe icyemezo n'ikigo cy'igihugu
+gishinzwe ubuhinzi n'ubworozi RAB nyuma yo
+kwitegereza ubunyamwuga bwacu.
+</p></div><div class="why-card"><img
+src="images/ubusitani2.jpeg"
+alt="Ubusitani">
+
+<h3>
+UBUHANGA MU GUKORA UBUSITANI
+</h3><p>
+Dukora ubusitani bujyanye n'aho ushaka kubukorera.
+Mu ngo, amahoteli, ibigo n'ahandi,
+ku giciro gito kandi kinyamwuga.
+</p></div><div class="why-card"><img
+src="images/duherereye.jpeg"
+alt="Aho turi">
+
+<h3>
+KUTUGERAHO BIROROSHYE
+</h3><p>
+Usibye i Musha ku kicaro gikuru,
+dufite n'andi mashami menshi mu gihugu.
+Wadusanga kandi ku mbuga nkoranyambaga.
+</p></div><div class="why-card"><img
+src="images/kuruhuka.jpg"
+alt="Kuruhuka">
+
+<h3>
+AHANTU HEZA HO KURUHUKIRA
+</h3><p>
+Eden Garden iguha ahantu heza
+ho kuruhukira no kwishimira.
+Mwe banyamahanga namwe bene gihugu
+mugana i Burasirazuba cyangwa muvayo,
+munyure muri Eden Garden.
+</p></div><div class="why-card"><img
+src="images/kurya2.jpeg"
+alt="Amafunguro">
+
+<h3>
+AMAFUNGURO YIHARIYE
+</h3><p>
+Amafunguro n'ibinyobwa biteguye neza.
+Umwihariko wacu ni uko tubafitiye n'indyo
+za Kinyarwanda ku giciro cyiza kandi mu isuku ihagije.
+</p></div><div class="why-card"><img
+src="images/billard2.jpeg"
+alt="Billard">
+
+<h3>
+IMYIDAGADURO
+</h3><p>
+Igihe cyiza cyo kwishimana n'inshuti n'umuryango.
+Ngwino hano maze tubahe icyo kurya,
+kunywa, mwidagadure mukina biliyari
+munarebera imikino itandukanye.
+</p></div><div class="why-card"><img
+src="images/bed.jpg"
+alt="Amacumbi">
+
+<h3>
+AMACUMBI MEZA
+</h3><p>
+Aho kuruhukira mu isuku ihagije n'umutekano.
+Waba uri umwe cyangwa muri benshi,
+mushobora kuza mukarara iwacu ku biciro byoroheje.
+</p></div><div class="why-card"><img
+src="images/parkinig.jpg"
+alt="Parking">
+
+<h3>
+PARIKINGI IHAGIJE
+</h3><p>
+Parking itekanye kandi ihagije ku bashyitsi bacu.
+Ushaka guparika umwanya muto cyangwa munini?
+Ntuhangayike kuko umutekano wacu urihariye.
+</p></div></div></section><!-- ==================================================
+     IBYAKORWA BYACU MU MASHUSHO
+================================================== --><section
+class="media-section"
+id="ibikorwa"><div class="media-header"><h2>
+📸 Ibikorwa byacu mu mashusho
+</h2><p>
+Hano kuri uru rubuga duhora tubashyiriraho
+amafoto na videos bibereka ibikorwa bya
+Vision Garden na Eden Garden.
+</p></div><!-- STEP 1 --><div
+class="media-step active"
+id="mediaStepType"><h3>
+Hitamo icyo ushaka kureba
+</h3><div class="media-type-buttons"><button
+type="button"
+class="media-type-btn"
+onclick="chooseMediaType('photos')">
+
+📷 AMAFOTO
+
+</button><button
+type="button"
+class="media-type-btn"
+onclick="chooseMediaType('videos')">
+
+🎥 VIDEOS
+
+</button></div></div><!-- STEP 2 --><div
+class="media-step"
+id="mediaStepGarden"
+style="display:none;"><h3>
+Hitamo aho ushaka kureba
+</h3><div class="media-garden-buttons"><button
+type="button"
+class="media-garden-btn"
+onclick="chooseMediaGarden('vision')">
+
+🌱 Vision Garden
+
+</button><button
+type="button"
+class="media-garden-btn"
+onclick="chooseMediaGarden('eden')">
+
+🏡 Eden Garden
+
+</button></div></div><!-- STEP 3 --><div
+class="media-step"
+id="mediaStepContent"
+style="display:none;"><h3 id="selectedMediaTitle">
+Ibikorwa
+</h3><div
+id="mediaGallery"
+class="media-grid">
+</div><div class="media-navigation"><button
+type="button"
+class="small-btn"
+onclick="backMediaStep()">
+
+⬅️ Subira inyuma
+
+</button><button
+type="button"
+class="small-btn"
+onclick="resetMediaSection()">
+
+🔄 Tangira bundi bushya
+
+</button></div></div></section><!-- ==================================================
+     LOCATION
+================================================== --><section class="location-section"><h2>
+📍 AHO DUHEREREYE
+</h2><p>
+Ushaka kutugana?
+Reba aho Vision Garden na Eden Garden biherereye
+kuri Google Maps.
+</p><a
+href="https://www.google.com/maps/search/?api=1&query=Vision+Garden+Company+Ltd"
+target="_blank"
+rel="noopener"
+class="main-btn">
+
+FUNGURA GOOGLE MAPS 📍
+
+</a></section><!-- ==================================================
+     CONTACT CTA
+================================================== --><section class="contact-cta"><h2>
+📞 Ufite ikibazo, ikifuzo cyangwa igitekerezo?
+</h2><p>
+Twandikire cyangwa uhamagare.
+Turi hano kugira ngo tugutege amatwi.
+</p><div class="cta-buttons"><a
+href="twandikire.html"
+class="main-btn">
+
+📞 Twandikire
+
+</a><button
+class="main-btn"
+onclick="openUniversalOrder('vision')">
+
+🛒 Tumiza nonaha
+
+</button></div></section><!-- ==================================================
+     UNIVERSAL ORDER MODAL
+================================================== --><div
+id="universalOrderModal"
+class="order-modal"><div class="order-modal-box"><button
+class="order-close"
+onclick="closeUniversalOrder()">
+
+×
+
+</button><div class="order-header"><h2 id="orderTitle">
+🛒 Order
+</h2><p id="orderDescription">
+Hitamo ibyo ushaka.
+</p></div><!-- STEP 1 --><div
+class="universal-order-step"
+id="universalStep1"><div class="order-progress"><span class="active">1</span>
+<span>2</span>
+<span>3</span>
+
+</div><h3>
+📋 Hitamo ibyo ushaka
+</h3><div
+id="orderProducts"
+class="order-products">
+</div><button
+class="main-btn order-next-btn"
+onclick="nextUniversalOrderStep(2)">
+
+Next ➡️
+
+</button></div><!-- STEP 2 --><div
+class="universal-order-step"
+id="universalStep2"
+style="display:none;"><div class="order-progress"><span class="done">✓</span>
+<span class="active">2</span>
+<span>3</span>
+
+</div><h3>
+🔢 Reba ibyo wahisemo
+</h3><div
+id="selectedOrderItems"
+class="selected-order-items">
+</div><div class="order-total-box"><span>
+💰 Total:
+</span><strong id="orderTotal">
+0 Frw
+</strong></div><div class="order-step-buttons"><button
+class="small-btn"
+onclick="nextUniversalOrderStep(1)">
+
+⬅️ Back
+
+</button><button
+class="main-btn"
+onclick="nextUniversalOrderStep(3)">
+
+Next ➡️
+
+</button></div></div><!-- STEP 3 --><div
+class="universal-order-step"
+id="universalStep3"
+style="display:none;"><div class="order-progress"><span class="done">✓</span>
+<span class="done">✓</span>
+<span class="active">3</span>
+
+</div><h3>
+📝 Amakuru yawe
+</h3><label>
+Amazina yawe
+</label><input
+type="text"
+id="orderCustomerName"
+placeholder="Andika amazina yawe">
+
+<label>
+Telephone
+</label><input
+type="tel"
+id="orderCustomerPhone"
+placeholder="078...">
+
+<label>
+Umubare w'abantu
+</label><input
+type="number"
+id="orderPeople"
+min="1"
+value="1"
+placeholder="Urugero: 2">
+
+<label>
+📅 Itariki ushaka
+</label><input
+type="date"
+id="orderDate">
+
+<label>
+🕐 Isaha ushaka
+</label><input
+type="time"
+id="orderTime">
+
+<label>
+✍️ Andika ibindi ushaka
+</label><textarea
+id="orderExtraNote"
+placeholder="Urugero: Hari ikindi nifuzaga kitari kuri menu...">
+</textarea><div class="order-final-total"><span>
+💰 Total y'ibyo wahisemo:
+</span><strong id="finalOrderTotal">
+0 Frw
+</strong></div><div class="order-step-buttons"><button
+class="small-btn"
+onclick="nextUniversalOrderStep(2)">
+
+⬅️ Back
+
+</button><button
+class="main-btn"
+onclick="sendUniversalOrder()">
+
+📲 Ohereza kuri WhatsApp
+
+</button></div></div></div></div><!-- ==================================================
+     FOOTER
+================================================== --><footer class="vision-footer"><h3>
+🌱 Vision Garden Company Ltd
+</h3><p>
+Pepiniyeri y'ibiti byiza mu Rwanda,
+gutunganya ubusitani ndetse na serivisi nziza
+za Eden Garden.
+</p><div class="footer-links"><a href="index.html">
+🏠 Ahabanza
+</a><a href="edeni-garden.html">
+🏡 Eden Garden
+</a><a href="serivisi.html">
+🌿 Serivisi
+</a><a href="ibiciro.html">
+💰 Ibiciro
+</a><a href="ibicuruzwa.html">
+🌱 Ibicuruzwa
+</a><a href="amashusho.html">
+📸 Amafoto & Videos
+</a><a href="ubuhamya.html">
+⭐ Ubuhamya
+</a><a href="amatangazo.html">
+📢 Amatangazo
+</a><a href="poromosiyo.html">
+🎁 Poromosiyo
+</a><a href="about.html">
+👥 Abo Turibo
+</a><a href="twandikire.html">
+📞 Twandikire
+</a></div><p class="copyright">
+© 2026 Vision Garden Company Ltd.
+Uburenganzira bwose burabitswe.
+</p></footer><!-- ==================================================
+     FLOATING BUTTONS
+================================================== --><div class="floating-buttons"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="whatsapp-float">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a><a
+href="tel:0781632705"
+class="phone-float">
+
+<i class="fa-solid fa-phone"></i>
+
+</a></div><!-- ==================================================
+     JAVASCRIPT
+================================================== --><script src="script.js"></script></body>
+</html>
