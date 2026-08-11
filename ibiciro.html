@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="rw">
+<html lang="en">
 
 <head>
 
@@ -8,12 +8,12 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Ibiciro | Vision Garden Company Ltd</title>
+<title>Prices | Vision Garden Company Ltd</title>
 
 <meta name="description"
-content="Reba ibiciro by'ibicuruzwa na serivisi bya Vision Garden na Eden Garden.">
+content="View prices for products and services from Vision Garden and Eden Garden.">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -21,7 +21,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <style>
 
 /* ==========================================================
-   IBICIRO PAGE
+   PRICING PAGE
 ========================================================== */
 
 .pricing-page{
@@ -351,10 +351,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <div class="announcement-bar">
 
-📢 Murakaza neza kuri Vision Garden Company Ltd
-| 🌱 Ingemwe
+📢 Welcome to Vision Garden Company Ltd
+| 🌱 Seedlings
 | 🏡 Eden Garden
-| 💰 Ibiciro
+| 💰 Prices
 
 </div>
 
@@ -371,7 +371,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <div class="logo">
 
 <img
-src="images/logo1.png"
+src="../images/logo1.png"
 alt="Vision Garden Company Ltd Logo">
 
 </div>
@@ -384,7 +384,7 @@ Vision Garden Company Ltd
 </h1>
 
 <p>
-Ibiciro byacu
+Our Prices
 </p>
 
 </div>
@@ -395,7 +395,7 @@ Ibiciro byacu
 <button
 class="menu-btn"
 onclick="toggleMenu()"
-aria-label="Fungura menu">
+aria-label="Open menu">
 
 ☰
 
@@ -405,7 +405,7 @@ aria-label="Fungura menu">
 <button
 class="search-btn"
 onclick="openSearch()"
-aria-label="Shakisha">
+aria-label="Search">
 
 🔍
 
@@ -421,11 +421,11 @@ id="searchBox">
 <input
 type="text"
 id="searchInput"
-placeholder="Shakisha serivisi cyangwa ibyo ushaka...">
+placeholder="Search for a service or product...">
 
 <button onclick="searchSite()">
 
-Shaka
+Search
 
 </button>
 
@@ -441,7 +441,7 @@ Shaka
 <nav id="main-menu">
 
 <a href="index.html">
-🏠 Ahabanza
+🏠 Home
 </a>
 
 <a href="eden-garden.html">
@@ -449,15 +449,15 @@ Shaka
 </a>
 
 <a href="serivisi.html">
-🌿 Serivisi
+🌿 Services
 </a>
 
 <a href="ibiciro.html">
-💰 Ibiciro
+💰 Prices
 </a>
 
 <a href="amashusho.html">
-📸 Amafoto & Videos
+📸 Photos & Videos
 </a>
 
 
@@ -466,7 +466,7 @@ type="button"
 class="menu-order-btn"
 onclick="openUniversalOrder('vision'); toggleMenu();">
 
-🛒 Tumiza (Vision)
+🛒 Order (Vision)
 
 </button>
 
@@ -476,29 +476,29 @@ type="button"
 class="menu-order-btn"
 onclick="openUniversalOrder('eden'); toggleMenu();">
 
-🍽️ Tumiza (Eden)
+🍽️ Order (Eden)
 
 </button>
 
 
 <a href="ubuhamya.html">
-⭐ Ubuhamya
+⭐ Testimonials
 </a>
 
 <a href="amatangazo.html">
-📢 Amatangazo
+📢 Announcements
 </a>
 
 <a href="promosiyo.html">
-🎁 Promosiyo
+🎁 Promotions
 </a>
 
 <a href="about.html">
-👥 Abo Turibo
+👥 About Us
 </a>
 
 <a href="twandikire.html">
-📞 Twandikire
+📞 Contact Us
 </a>
 
 </nav>
@@ -513,10 +513,10 @@ onclick="openUniversalOrder('eden'); toggleMenu();">
 <div class="language-box">
 
 <a
-href="english/ibiciro.html"
+href="../ibiciro.html"
 class="english-btn">
 
-🇬🇧 English Version
+🇷🇼 Kinyarwanda Version
 
 </a>
 
@@ -533,16 +533,16 @@ class="english-btn">
 <section class="pricing-intro">
 
 <h2>
-💰 IBICIRO BYA VISION GARDEN & EDEN GARDEN
+💰 VISION GARDEN & EDEN GARDEN PRICES
 </h2>
 
 <p>
 
-Hano ushobora kureba ibicuruzwa na serivisi
-dufite hamwe n'ibiciro byabyo.
+Here you can view our products and services
+together with their prices.
 
-Hitamo icyo ushaka, urebe ifoto, igiciro,
-hanyuma ukore order yawe.
+Choose what you need, view the image and price,
+then place your order.
 
 </p>
 
@@ -586,7 +586,7 @@ onclick="showPriceCategory('eden',this)">
 <input
 type="text"
 id="productSearch"
-placeholder="🔍 Shakisha Avoka, Mango, Indimu..."
+placeholder="🔍 Search Avocado, Mango, Lemon..."
 oninput="searchProducts()">
 
 </div>
@@ -605,6 +605,7 @@ onclick="filterLetter('all',this)">
 ALL
 
 </button>
+
 
 <button onclick="filterLetter('ABC',this)">
 ABC
@@ -652,6 +653,7 @@ YZ
 <div
 id="visionProductGrid"
 class="price-grid">
+
 </div>
 
 
@@ -662,6 +664,7 @@ class="price-grid">
 <div
 id="visionPagination"
 class="pagination">
+
 </div>
 
 </section>
@@ -677,14 +680,13 @@ class="eden-pricing"
 style="display:none;">
 
 <h2>
-🏡 EDEN GARDEN — IBICIRO
+🏡 EDEN GARDEN — PRICES
 </h2>
 
 <p class="eden-pricing-intro">
 
-Reba serivisi za Eden Garden n'ibiciro byazo.
-
-Amafoto ushobora kuyongeramo nyuma.
+View Eden Garden services and their prices.
+More photos can be added later.
 
 </p>
 
@@ -692,6 +694,7 @@ Amafoto ushobora kuyongeramo nyuma.
 <div
 id="edenPriceGrid"
 class="eden-price-grid">
+
 </div>
 
 </section>
@@ -704,15 +707,15 @@ class="eden-price-grid">
 <section class="price-final-cta">
 
 <h2>
-🛒 Wabonye icyo ushaka?
+🛒 Found What You Need?
 </h2>
 
 <p>
 
-Hitamo ibicuruzwa cyangwa serivisi ushaka,
-hanyuma ukore order yawe.
+Choose the products or services you need,
+then place your order.
 
-Tuzakira order yawe kuri WhatsApp.
+We will receive your order through WhatsApp.
 
 </p>
 
@@ -721,7 +724,7 @@ Tuzakira order yawe kuri WhatsApp.
 class="main-btn"
 onclick="openUniversalOrder('vision')">
 
-🛒 TUMIZA NONAHA
+🛒 ORDER NOW
 
 </button>
 
@@ -757,7 +760,7 @@ onclick="closeUniversalOrder()">
 </h2>
 
 <p id="orderDescription">
-Hitamo ibyo ushaka.
+Choose what you need.
 </p>
 
 </div>
@@ -770,6 +773,7 @@ Hitamo ibyo ushaka.
 <div
 class="universal-order-step"
 id="universalStep1">
+
 
 <div class="order-progress">
 
@@ -789,13 +793,14 @@ id="universalStep1">
 
 
 <h3>
-📋 Hitamo ibyo ushaka
+📋 Choose What You Need
 </h3>
 
 
 <div
 id="orderProducts"
 class="order-products">
+
 </div>
 
 
@@ -837,13 +842,14 @@ style="display:none;">
 
 
 <h3>
-🔢 Reba ibyo wahisemo
+🔢 Review Your Selection
 </h3>
 
 
 <div
 id="selectedOrderItems"
 class="selected-order-items">
+
 </div>
 
 
@@ -854,7 +860,7 @@ class="selected-order-items">
 </span>
 
 <strong id="orderTotal">
-0 Frw
+0 RWF
 </strong>
 
 </div>
@@ -911,22 +917,22 @@ style="display:none;">
 
 
 <h3>
-📝 Amakuru yawe
+📝 Your Information
 </h3>
 
 
 <label>
-Amazina yawe
+Your Name
 </label>
 
 <input
 type="text"
 id="orderCustomerName"
-placeholder="Andika amazina yawe">
+placeholder="Enter your name">
 
 
 <label>
-Telephone
+Phone Number
 </label>
 
 <input
@@ -936,7 +942,7 @@ placeholder="078...">
 
 
 <label>
-Umubare w'abantu
+Number of People
 </label>
 
 <input
@@ -944,11 +950,11 @@ type="number"
 id="orderPeople"
 min="1"
 value="1"
-placeholder="Urugero: 2">
+placeholder="Example: 2">
 
 
 <label>
-📅 Itariki ushaka
+📅 Preferred Date
 </label>
 
 <input
@@ -957,7 +963,7 @@ id="orderDate">
 
 
 <label>
-🕐 Isaha ushaka
+🕐 Preferred Time
 </label>
 
 <input
@@ -966,23 +972,23 @@ id="orderTime">
 
 
 <label>
-✍️ Andika ibindi ushaka
+✍️ Additional Information
 </label>
 
 <textarea
 id="orderExtraNote"
-placeholder="Urugero: Hari ikindi nifuzaga kitari kuri list...">
+placeholder="Example: I have another request that is not on the list...">
 </textarea>
 
 
 <div class="order-final-total">
 
 <span>
-💰 Total y'ibyo wahisemo:
+💰 Total for Your Selection:
 </span>
 
 <strong id="finalOrderTotal">
-0 Frw
+0 RWF
 </strong>
 
 </div>
@@ -1003,7 +1009,7 @@ onclick="nextUniversalOrderStep(2)">
 class="main-btn"
 onclick="sendUniversalOrder()">
 
-📲 Ohereza kuri WhatsApp
+📲 Send via WhatsApp
 
 </button>
 
@@ -1029,9 +1035,9 @@ onclick="sendUniversalOrder()">
 
 <p>
 
-Ingemwe z'imbuto, ibiti by'amashyamba,
-indabo, ubusitani, ubujyanama na
-Eden Garden.
+Fruit seedlings, forest trees,
+flowers, landscaping, consultancy
+and Eden Garden.
 
 </p>
 
@@ -1039,19 +1045,19 @@ Eden Garden.
 <div class="footer-links">
 
 <a href="index.html">
-🏠 Ahabanza
+🏠 Home
 </a>
 
 <a href="ibicuruzwa.html">
-🌱 Ibicuruzwa
+🌱 Products
 </a>
 
 <a href="serivisi.html">
-🌿 Serivisi
+🌿 Services
 </a>
 
 <a href="ibiciro.html">
-💰 Ibiciro
+💰 Prices
 </a>
 
 <a href="eden-garden.html">
@@ -1059,15 +1065,15 @@ Eden Garden.
 </a>
 
 <a href="amashusho.html">
-📸 Amafoto & Videos
+📸 Photos & Videos
 </a>
 
 <a href="about.html">
-👥 Abo Turibo
+👥 About Us
 </a>
 
 <a href="twandikire.html">
-📞 Twandikire
+📞 Contact Us
 </a>
 
 </div>
@@ -1076,7 +1082,7 @@ Eden Garden.
 <p class="copyright">
 
 © 2026 Vision Garden Company Ltd.
-Uburenganzira bwose burabitswe.
+All Rights Reserved.
 
 </p>
 
@@ -1088,6 +1094,7 @@ Uburenganzira bwose burabitswe.
 ========================================================== -->
 
 <div class="floating-buttons">
+
 
 <a
 href="https://wa.me/250781632705"
@@ -1115,7 +1122,7 @@ class="phone-float">
      MAIN JAVASCRIPT
 ========================================================== -->
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 
 
 <!-- ==========================================================
@@ -1130,59 +1137,59 @@ class="phone-float">
 
 const priceProducts = [
 
-    ["Avoka","ABC"],
-    ["Amacunga","ABC"],
-    ["Amatunda","ABC"],
-    ["Ananasi","ABC"],
+    ["Avocado","ABC"],
+    ["Orange","ABC"],
+    ["Tamarillo","ABC"],
+    ["Pineapple","ABC"],
     ["Banana","ABC"],
 
     ["Clementine","ABC"],
 
-    ["Damasiko","DEF"],
-    ["Delima","DEF"],
+    ["Apricot","DEF"],
+    ["Pomegranate","DEF"],
 
     ["Figs","DEF"],
 
-    ["Goyave","GHI"],
+    ["Guava","GHI"],
     ["Grenade","GHI"],
 
-    ["Imbuto z'Imizabibu","GHI"],
-    ["Imyembe","GHI"],
-    ["Indimu","GHI"],
-    ["Ipapayi","GHI"],
+    ["Grape Seedlings","GHI"],
+    ["Mango Seedlings","GHI"],
+    ["Lemon","GHI"],
+    ["Papaya","GHI"],
 
     ["Jujube","JKL"],
 
-    ["Kaki","JKL"],
+    ["Persimmon","JKL"],
 
-    ["Mandarine","MNO"],
+    ["Mandarin","MNO"],
     ["Mango","MNO"],
-    ["Maracuja","MNO"],
+    ["Passion Fruit","MNO"],
     ["Melon","MNO"],
 
     ["Orange","MNO"],
 
-    ["Papayi","PQR"],
+    ["Papaya","PQR"],
     ["Passion Fruit","PQR"],
-    ["Pome","PQR"],
+    ["Pear","PQR"],
 
     ["Strawberry","STU"],
 
     ["Tangerine","STU"],
 
-    ["Umwembe","STU"],
-    ["Umwembe w'ubwoko butandukanye","STU"],
+    ["Mango","STU"],
+    ["Different Mango Varieties","STU"],
 
-    ["Voka","VWX"],
+    ["Avocado","VWX"],
 
-    ["Ibiti by'Amashyamba","VWX"],
-    ["Ibiti byo Kurimbisha","VWX"],
-    ["Indabo","VWX"],
+    ["Forest Trees","VWX"],
+    ["Ornamental Trees","VWX"],
+    ["Flowers","VWX"],
 
-    ["Ibiti by'imbuto","YZ"],
-    ["Ingemwe z'imbuto","YZ"],
-    ["Indabo zo Kurimbisha","YZ"],
-    ["Ubusitani","YZ"]
+    ["Fruit Trees","YZ"],
+    ["Fruit Seedlings","YZ"],
+    ["Ornamental Flowers","YZ"],
+    ["Landscaping","YZ"]
 
 ];
 
@@ -1194,33 +1201,33 @@ const priceProducts = [
 const edenPrices = [
 
     {
-        name:"Amafunguro",
-        image:"images/kurya2.jpeg"
+        name:"Food",
+        image:"../images/kurya2.jpeg"
     },
 
     {
-        name:"Ibinyobwa",
-        image:"images/bisembuye.jpeg"
+        name:"Drinks",
+        image:"../images/bisembuye.jpeg"
     },
 
     {
-        name:"Amacumbi",
-        image:"images/bed.jpg"
+        name:"Accommodation",
+        image:"../images/bed.jpg"
     },
 
     {
-        name:"Billard",
-        image:"images/billard2.jpeg"
+        name:"Billiard",
+        image:"../images/billard2.jpeg"
     },
 
     {
         name:"Parking",
-        image:"images/parkinig.jpg"
+        image:"../images/parkinig.jpg"
     },
 
     {
-        name:"Aho Kuruhukira",
-        image:"images/kuruhuka.jpg"
+        name:"Relaxation Area",
+        image:"../images/kuruhuka.jpg"
     }
 
 ];
@@ -1245,7 +1252,7 @@ const productsPerPage = 12;
 
 function productImage(name){
 
-    return "images/product-placeholder.jpg";
+    return "../images/product-placeholder.jpg";
 
 }
 
@@ -1313,10 +1320,8 @@ function renderPriceProducts(){
 
 
     if(currentPricePage > totalPages){
-
         currentPricePage =
             totalPages || 1;
-
     }
 
 
@@ -1343,11 +1348,11 @@ function renderPriceProducts(){
 
             <div class="price-empty">
 
-                🔍 Nta bicuruzwa bibonetse.
+                🔍 No products found.
 
                 <br>
 
-                Gerageza irindi zina.
+                Try another name.
 
             </div>
 
@@ -1370,7 +1375,7 @@ function renderPriceProducts(){
             <img
                 src="${productImage(product[0])}"
                 alt="${product[0]}"
-                onerror="this.src='images/logo1.png'"
+                onerror="this.src='../images/logo1.png'"
             >
 
             <h3>
@@ -1378,13 +1383,13 @@ function renderPriceProducts(){
             </h3>
 
             <div class="price">
-                1,000 Frw
+                1,000 RWF
             </div>
 
             <button
                 onclick="openUniversalOrder('vision')">
 
-                🛒 Tumiza
+                🛒 Order
 
             </button>
 
@@ -1691,7 +1696,7 @@ function renderEdenPrices(){
             <img
                 src="${item.image}"
                 alt="${item.name}"
-                onerror="this.src='images/logo1.png'"
+                onerror="this.src='../images/logo1.png'"
             >
 
             <h3>
@@ -1699,13 +1704,13 @@ function renderEdenPrices(){
             </h3>
 
             <div class="price">
-                1,000 Frw
+                1,000 RWF
             </div>
 
             <button
                 onclick="openUniversalOrder('eden')">
 
-                🛒 Tumiza
+                🛒 Order
 
             </button>
 
