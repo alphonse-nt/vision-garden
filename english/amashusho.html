@@ -1,0 +1,435 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Photos & Videos | Vision Garden Company Ltd</title><meta name="description"
+content="View photos and videos of Vision Garden Company Ltd and Eden Garden activities, services, gardens, seedlings and entertainment.">
+
+<link rel="stylesheet"
+href="../style.css"><link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head><body><!-- ==================================================
+     ANNOUNCEMENT BAR
+================================================== --><div class="announcement-bar">📢 Welcome to Vision Garden Company Ltd 🌱
+| 📸 Explore our activities
+| 🏡 Eden Garden is available
+
+</div><!-- ==================================================
+     HEADER
+================================================== --><header class="main-header"><div class="header-container"><!-- LOGO --><div class="logo"><img
+src="../images/logo1.png"
+alt="Vision Garden Company Ltd Logo">
+
+</div><!-- BRAND --><div class="brand"><h1>
+Vision Garden Company Ltd
+</h1><p>
+Quality tree nursery in Rwanda
+</p></div><!-- HEADER ACTIONS --><div class="header-actions"><button
+type="button"
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Open menu">
+
+☰
+
+</button><button
+type="button"
+class="search-btn"
+onclick="openSearch()"
+aria-label="Search">
+
+🔍
+
+</button></div><!-- SEARCH --><div
+class="search-container"
+id="searchBox"><input
+type="text"
+id="searchInput"
+placeholder="Search services or products..."
+aria-label="Search">
+
+<button
+type="button"
+onclick="searchSite()">
+
+Search
+
+</button></div></div><!-- ==================================================
+     MAIN MENU
+================================================== --><nav id="main-menu"><a href="index.html">
+🏠 Home
+</a><a href="../edeni-garden.html">
+🏡 Eden Garden
+</a><a href="serivisi.html">
+🌿 Services
+</a><a href="ibiciro.html">
+💰 Prices
+</a><a href="amashusho.html"
+class="active">
+
+📸 Photos & Videos
+
+</a><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision'); toggleMenu();">
+
+🛒 Order (Vision)
+
+</button><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden'); toggleMenu();">
+
+🍽️ Order (Eden)
+
+</button><a href="ubuhamya.html">
+⭐ Testimonials
+</a><a href="amatangazo.html">
+📢 Announcements
+</a><a href="poromosiyo.html">
+🎁 Promotions
+</a><a href="about.html">
+👥 About Us
+</a><a href="twandikire.html">
+📞 Contact Us
+</a></nav></header><!-- ==================================================
+     LANGUAGE
+================================================== --><div class="language-box"><a
+href="../amashusho.html"
+class="english-btn">
+
+🇷🇼 Kinyarwanda Version
+
+</a></div><!-- ==================================================
+     HERO
+================================================== --><section class="hero-slider"><div class="hero-slide active"><img
+src="../images/vision.jpg"
+alt="Vision Garden Company Ltd"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+📸 Our Activities in Photos & Videos
+</h2><p>Here on our website, we regularly share
+photos and videos showing the activities
+of Vision Garden Company Ltd and Eden Garden.
+
+</p><a
+href="#media-content"
+class="main-btn">
+
+📸 Start Exploring
+
+</a></div></div></section><!-- ==================================================
+     INTRO
+================================================== --><section class="intro-section"><h2>
+🌿 Explore What We Do
+</h2><p>We want our customers to see our actual
+activities through photos and videos.
+
+Choose whether you want to view
+<strong>photos</strong>
+or
+<strong>videos</strong>,
+then choose Vision Garden or Eden Garden.
+
+</p></section><!-- ==================================================
+     MEDIA SYSTEM
+================================================== --><section
+class="media-section"
+id="media-content"><div class="media-header"><h2>
+📸🎥 PHOTOS AND VIDEOS
+</h2><p>
+Choose what you would like to view.
+</p></div><!-- ==================================================
+     STEP 1
+================================================== --><div
+class="media-step active"
+id="mediaStepType"><h3>
+1️⃣ Choose what you want to view
+</h3><div class="media-type-buttons"><button
+type="button"
+class="media-type-btn"
+onclick="chooseMediaType('photos')">
+
+📷
+
+<strong>
+PHOTOS
+</strong><span>
+View photos of our activities
+</span></button><button
+type="button"
+class="media-type-btn"
+onclick="chooseMediaType('videos')">
+
+🎥
+
+<strong>
+VIDEOS
+</strong><span>
+Watch our videos
+</span></button></div></div><!-- ==================================================
+     STEP 2
+================================================== --><div
+class="media-step"
+id="mediaStepGarden"
+style="display:none;"><h3>
+2️⃣ Choose where you want to view
+</h3><div class="media-garden-buttons"><button
+type="button"
+class="media-garden-btn"
+onclick="chooseMediaGarden('vision')">
+
+🌱
+
+<strong>
+VISION GARDEN
+</strong><span>
+Nursery, seedlings, gardens and trees
+</span></button><button
+type="button"
+class="media-garden-btn"
+onclick="chooseMediaGarden('eden')">
+
+🏡
+
+<strong>
+EDEN GARDEN
+</strong><span>
+Food, accommodation and entertainment
+</span></button></div></div><!-- ==================================================
+     STEP 3
+================================================== --><div
+class="media-step"
+id="mediaStepCategory"
+style="display:none;"><h3 id="mediaCategoryTitle">
+3️⃣ Choose a category
+</h3><div
+id="mediaCategories"
+class="media-category-grid"><!-- Categories will be added by JavaScript --></div><div class="media-navigation"><button
+type="button"
+class="small-btn"
+onclick="backMediaToGarden()">
+
+⬅️ Back
+
+</button></div></div><!-- ==================================================
+     STEP 4
+================================================== --><div
+class="media-step"
+id="mediaStepContent"
+style="display:none;"><h3 id="selectedMediaTitle">
+Activities
+</h3><div
+id="mediaGallery"
+class="media-grid"><!-- Content will be added by JavaScript --></div><div class="media-navigation"><button
+type="button"
+class="small-btn"
+onclick="backMediaToCategory()">
+
+⬅️ Back to Categories
+
+</button><button
+type="button"
+class="small-btn"
+onclick="resetMediaSection()">
+
+🔄 Start Again
+
+</button></div></div></section><!-- ==================================================
+     SOCIAL MEDIA
+================================================== --><section class="services-section"><h2>
+🌐 Follow Us on Social Media
+</h2><p>Follow
+<strong>Vision Garden Company Ltd</strong>
+on Facebook, Instagram, TikTok and YouTube
+to see new photos, videos, announcements
+and promotions.
+
+</p><div class="service-grid"><!-- FACEBOOK --><div class="service-card"><h3><i class="fa-brands fa-facebook"></i>
+
+Facebook
+
+</h3><p>
+Vision Garden Company Ltd
+</p><a
+href="https://www.facebook.com/search/pages/?q=Vision%20Garden%20Company%20Ltd"
+target="_blank"
+rel="noopener"
+class="small-btn">
+
+<i class="fa-brands fa-facebook"></i>
+
+Open Facebook
+
+</a></div><!-- INSTAGRAM --><div class="service-card"><h3><i class="fa-brands fa-instagram"></i>
+
+Instagram
+
+</h3><p>
+Vision Garden Company Ltd
+</p><a
+href="https://www.instagram.com/explore/search/keyword/?q=Vision%20Garden%20Company%20Ltd"
+target="_blank"
+rel="noopener"
+class="small-btn">
+
+<i class="fa-brands fa-instagram"></i>
+
+Open Instagram
+
+</a></div><!-- TIKTOK --><div class="service-card"><h3><i class="fa-brands fa-tiktok"></i>
+
+TikTok
+
+</h3><p>
+Vision Garden Company Ltd
+</p><a
+href="https://www.tiktok.com/search?q=Vision%20Garden%20Company%20Ltd"
+target="_blank"
+rel="noopener"
+class="small-btn">
+
+<i class="fa-brands fa-tiktok"></i>
+
+Open TikTok
+
+</a></div><!-- YOUTUBE --><div class="service-card"><h3><i class="fa-brands fa-youtube"></i>
+
+YouTube
+
+</h3><p>
+Vision Garden Company Ltd
+</p><a
+href="https://www.youtube.com/results?search_query=Vision+Garden+Company+Ltd"
+target="_blank"
+rel="noopener"
+class="small-btn">
+
+<i class="fa-brands fa-youtube"></i>
+
+Open YouTube
+
+</a></div></div></section><!-- ==================================================
+     CONTACT CTA
+================================================== --><section class="contact-cta"><h2>
+📞 Want to Ask or Place an Order?
+</h2><p>If you would like more information about
+what you have seen or would like to place
+an order, contact us.
+
+</p><div class="cta-buttons"><a
+href="twandikire.html"
+class="main-btn">
+
+📞 Contact Us
+
+</a><button
+type="button"
+class="main-btn"
+onclick="openUniversalOrder('vision')">
+
+🛒 Place an Order
+
+</button><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="main-btn">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a></div></section><!-- ==================================================
+     FOOTER
+================================================== --><footer class="vision-footer"><h3>
+🌱 Vision Garden Company Ltd
+</h3><p>Quality tree nursery in Rwanda,
+garden landscaping and excellent
+Eden Garden services.
+
+</p><div class="footer-links"><a href="index.html">
+🏠 Home
+</a><a href="ibicuruzwa.html">
+🌱 Products
+</a><a href="serivisi.html">
+🌿 Services
+</a><a href="ibiciro.html">
+💰 Prices
+</a><a href="../edeni-garden.html">
+🏡 Eden Garden
+</a><a href="amashusho.html">
+📸 Photos & Videos
+</a><a href="ubuhamya.html">
+⭐ Testimonials
+</a><a href="amatangazo.html">
+📢 Announcements
+</a><a href="poromosiyo.html">
+🎁 Promotions
+</a><a href="about.html">
+👥 About Us
+</a><a href="twandikire.html">
+📞 Contact Us
+</a></div><!-- SOCIAL FOOTER --><div class="footer-social"><a
+href="https://www.facebook.com/search/pages/?q=Vision%20Garden%20Company%20Ltd"
+target="_blank"
+rel="noopener"
+aria-label="Facebook">
+
+<i class="fa-brands fa-facebook"></i>
+
+</a><a
+href="https://www.instagram.com/explore/search/keyword/?q=Vision%20Garden%20Company%20Ltd"
+target="_blank"
+rel="noopener"
+aria-label="Instagram">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a><a
+href="https://www.tiktok.com/search?q=Vision%20Garden%20Company%20Ltd"
+target="_blank"
+rel="noopener"
+aria-label="TikTok">
+
+<i class="fa-brands fa-tiktok"></i>
+
+</a><a
+href="https://www.youtube.com/results?search_query=Vision+Garden+Company+Ltd"
+target="_blank"
+rel="noopener"
+aria-label="YouTube">
+
+<i class="fa-brands fa-youtube"></i>
+
+</a><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+aria-label="WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a></div><p class="copyright">© 2026 Vision Garden Company Ltd.
+All rights reserved.
+
+</p></footer><!-- ==================================================
+     FLOATING BUTTONS
+================================================== --><div class="floating-buttons"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="whatsapp-float">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a><a
+href="tel:0781632705"
+class="phone-float">
+
+<i class="fa-solid fa-phone"></i>
+
+</a></div><!-- ==================================================
+     JAVASCRIPT
+================================================== --><script src="../script.js"></script></body>
+</html>
