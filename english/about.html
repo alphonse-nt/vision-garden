@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About Us | Vision Garden Company Ltd</title><meta name="description"
+content="Learn about Vision Garden Company Ltd, our history, mission, leadership, services and vision for promoting trees, gardens and environmental conservation in Rwanda.">
+
+<link rel="stylesheet" href="../style.css"><link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head><body><!-- ==================================================
+     ANNOUNCEMENT BAR
+================================================== --><div class="announcement-bar">📢 Welcome to Vision Garden Company Ltd 🌱
+| 🌳 We plant trees
+| 🌿 We create gardens
+| 🏡 Eden Garden is available
+
+</div><!-- ==================================================
+     HEADER
+================================================== --><header class="main-header"><div class="header-container"><!-- LOGO --><div class="logo"><img
+src="../images/logo1.png"
+alt="Vision Garden Company Ltd Logo">
+
+</div><!-- BRAND --><div class="brand"><h1>
+Vision Garden Company Ltd
+</h1><p>
+Quality tree nursery in Rwanda
+</p></div><!-- HEADER ACTIONS --><div class="header-actions"><button
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Open menu">
+
+☰
+
+</button><button
+class="search-btn"
+onclick="openSearch()"
+aria-label="Search">
+
+🔍
+
+</button></div><!-- SEARCH --><div
+class="search-container"
+id="searchBox"><input
+type="text"
+id="searchInput"
+placeholder="Search services or products...">
+
+<button onclick="searchSite()">Search
+
+</button></div></div><!-- ==================================================
+     MAIN MENU
+================================================== --><nav id="main-menu"><a href="index.html">
+🏠 Home
+</a><a href="eden-garden.html">
+🏡 Eden Garden
+</a><a href="serivisi.html">
+🌿 Services
+</a><a href="ibiciro.html">
+💰 Prices
+</a><a href="amashusho.html">
+📸 Photos & Videos
+</a><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision'); toggleMenu();">
+
+🛒 Order (Vision)
+
+</button><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden'); toggleMenu();">
+
+🍽️ Order (Eden)
+
+</button><a href="ubuhamya.html">
+⭐ Testimonials
+</a><a href="amatangazo.html">
+📢 Announcements
+</a><a href="poromosiyo.html">
+🎁 Promotions
+</a><a href="about.html">
+👥 About Us
+</a><a href="twandikire.html">
+📞 Contact Us
+</a></nav></header><!-- ==================================================
+     LANGUAGE
+================================================== --><div class="language-box"><a
+href="../about.html"
+class="english-btn">
+
+🇷🇼 Kinyarwanda
+
+</a></div><!-- ==================================================
+     ABOUT HERO
+================================================== --><section
+class="hero-slider"
+id="about-hero"><div class="hero-slide active"><img
+src="../images/vision.jpg"
+alt="Vision Garden Company Ltd"
+class="zoom-img">
+
+<div class="hero-content"><h2>
+🌱 About Us
+</h2><p>
+Learn more about Vision Garden Company Ltd,
+what we do, where we come from and what
+we aim to achieve.
+</p><a
+href="twandikire.html"
+class="main-btn">
+
+📞 Contact Us
+
+</a></div></div></section><!-- ==================================================
+     INTRO
+================================================== --><section class="intro-section"><h2>
+🌿 Vision Garden Company Ltd
+</h2><p><strong>Vision Garden Company Ltd</strong>
+is a company working in the areas of
+seedlings, trees, landscaping,
+environmental conservation and
+Eden Garden services.
+
+We are committed to helping customers
+find quality trees and seedlings while
+also providing guidance on how to plant
+and care for them.
+
+</p></section><!-- ==================================================
+     OUR STORY
+================================================== --><section class="services-section"><h2>
+📖 OUR STORY
+</h2><div class="service-grid"><div class="service-card"><img
+src="../images/ingemwe1.jpg"
+alt="Vision Garden nursery">
+
+<h3>
+🌱 Established in 2005
+</h3><p>Vision Garden started its activities
+in <strong>2005</strong>, with the goal
+of helping people access quality
+seedlings and promoting tree planting
+in Rwanda.
+
+</p></div><div class="service-card"><img
+src="../images/ingemwe2.jpeg"
+alt="Quality seedlings">
+
+<h3>
+🌳 Quality
+</h3><p>We prioritize the quality of the
+seedlings and trees we provide so
+that our customers can achieve
+long-term results.
+
+</p></div><div class="service-card"><img
+src="../images/rab.png"
+alt="RAB">
+
+<h3>
+✅ RAB Recognition
+</h3><p>Vision Garden has experience in
+nursery activities and operates
+within the relevant requirements
+of the responsible authorities.
+
+</p></div></div></section><!-- ==================================================
+     WHERE WE ARE
+================================================== --><section class="intro-section"><h2>
+📍 WHERE WE ARE LOCATED
+</h2><p>Vision Garden is located in
+<strong>Musha Sector,
+Rwamagana District</strong>.
+
+We continue to reach our customers
+through partnerships and activities
+in different parts of Rwanda.
+
+</p><a
+href="https://www.google.com/maps/search/?api=1&query=Vision+Garden+Company+Ltd"
+target="_blank"
+rel="noopener"
+class="main-btn">
+
+📍 Find Us on Google Maps
+
+</a></section><!-- ==================================================
+     CEO
+================================================== --><section class="popular-section"><h2>
+👤 OUR CEO
+</h2><div class="card-grid"><div class="product-card"><img
+src="../images/ceo.jpg"
+alt="Sibomana Emmanuel"
+onerror="this.style.display='none'">
+
+<h3>
+Sibomana Emmanuel
+</h3><p><strong>
+Chief Executive Officer (CEO)
+</strong></p><p>He leads the activities of Vision Garden
+and works to develop the company's
+services, with the goal of ensuring
+that customers receive quality
+services and reliable seedlings.
+
+</p></div></div></section><!-- ==================================================
+     OUR MISSION
+================================================== --><section class="why-section"><button
+class="why-toggle"
+onclick="toggleWhyUs()">
+
+🎯 OUR MISSION & VISION
+
+</button><div
+id="why-content"
+class="why-content"><div class="why-card"><img
+src="../images/ingemwe2.jpeg"
+alt="Quality seedlings">
+
+<h3>
+🎯 OUR MISSION
+</h3><p>To provide quality seedlings and trees
+and help customers access, plant and
+care for them properly.
+
+</p></div><div class="why-card"><img
+src="../images/ubusitani2.jpeg"
+alt="Beautiful garden">
+
+<h3>
+🌿 PROMOTING LANDSCAPING
+</h3><p>To help individuals, organizations
+and hotels create beautiful gardens
+that fit the places where they are
+developed.
+
+</p></div><div class="why-card"><img
+src="../images/inturusu.jpeg"
+alt="Forest trees">
+
+<h3>
+🌳 ENVIRONMENTAL CONSERVATION
+</h3><p>We encourage tree planting,
+environmental conservation and
+contribute to a greener and
+more beautiful Rwanda.
+
+</p></div><div class="why-card"><img
+src="../images/inama.jpg"
+alt="Agricultural advice">
+
+<h3>
+👨‍🌾 ADVISORY SERVICES
+</h3><p>We help customers choose suitable
+trees, plant them and care for them
+according to their location and
+objectives.
+
+</p></div><div class="why-card"><img
+src="../images/edeni-garden.jpeg"
+alt="Eden Garden">
+
+<h3>
+🏡 EDEN GARDEN
+</h3><p>The Vision Garden family also includes
+Eden Garden, a place for relaxation,
+dining, entertainment and accommodation.
+
+</p></div><div class="why-card"><img
+src="../images/kurya2.jpeg"
+alt="Eden Garden food">
+
+<h3>
+🤝 CUSTOMER CARE
+</h3><p>We are committed to ensuring that every
+customer receives good service, reliable
+information and assistance whenever
+needed.
+
+</p></div></div></section><!-- ==================================================
+     WHAT WE DO
+================================================== --><section class="services-section"><h2>
+🌱 WHAT WE DO
+</h2><div class="service-grid"><div class="service-card"><img
+src="../images/avoka.jpg"
+alt="Fruit seedlings">
+
+<h3>
+🌱 Fruit Seedlings
+</h3><p>Avocado, mango, orange, lemon,
+papaya, grapes and others.
+
+</p></div><div class="service-card"><img
+src="../images/inturusu.jpeg"
+alt="Forest trees">
+
+<h3>
+🌳 Forest Trees
+</h3><p>We provide trees that help protect
+the environment and increase
+green coverage.
+
+</p></div><div class="service-card"><img
+src="../images/indabo.jpeg"
+alt="Flowers">
+
+<h3>
+🌸 Flowers & Ornamental Plants
+</h3><p>Trees and flowers that add beauty
+to homes, organizations and
+other places.
+
+</p></div><div class="service-card"><img
+src="../images/ubusitani.jpeg"
+alt="Landscaping">
+
+<h3>
+🌿 Landscaping
+</h3><p>We help plan and create gardens
+according to the location and
+your needs.
+
+</p></div></div><a
+href="serivisi.html"
+class="main-btn">
+
+🌿 View Our Services
+
+</a></section><!-- ==================================================
+     WHY CHOOSE US
+================================================== --><section class="intro-section"><h2>
+⭐ WHY CHOOSE VISION GARDEN?
+</h2><p>🌱 Experience in nursery activities.
+
+<br><br>
+
+🌳 We prioritize seedling quality.
+
+<br><br>
+
+👨‍🌾 We provide customer guidance.
+
+<br><br>
+
+🌿 We help with landscaping.
+
+<br><br>
+
+🏡 We also offer Eden Garden services.
+
+<br><br>
+
+🤝 We prioritize excellent customer care.
+
+</p></section><!-- ==================================================
+     CALL TO ACTION
+================================================== --><section class="contact-cta"><h2>
+🌱 Let's Make Rwanda Greener Together
+</h2><p>Do you need seedlings, landscaping
+services or professional advice?
+
+Contact us today.
+
+</p><div class="cta-buttons"><a
+href="twandikire.html"
+class="main-btn">
+
+📞 Contact Us
+
+</a><button
+class="main-btn"
+onclick="openUniversalOrder('vision')">
+
+🛒 Order Products
+
+</button></div></section><!-- ==================================================
+     FOOTER
+================================================== --><footer class="vision-footer"><h3>
+🌱 Vision Garden Company Ltd
+</h3><p>Quality tree nursery in Rwanda,
+landscaping services and
+excellent Eden Garden services.
+
+</p><div class="footer-links"><a href="index.html">
+🏠 Home
+</a><a href="ibicuruzwa.html">
+🌱 Products
+</a><a href="serivisi.html">
+🌿 Services
+</a><a href="eden-garden.html">
+🏡 Eden Garden
+</a><a href="amashusho.html">
+📸 Photos & Videos
+</a><a href="about.html">
+👥 About Us
+</a><a href="twandikire.html">
+📞 Contact Us
+</a></div><p class="copyright">© 2026 Vision Garden Company Ltd.
+All rights reserved.
+
+</p></footer><!-- ==================================================
+     FLOATING BUTTONS
+================================================== --><div class="floating-buttons"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="whatsapp-float">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a><a
+href="tel:0781632705"
+class="phone-float">
+
+<i class="fa-solid fa-phone"></i>
+
+</a></div><!-- ==================================================
+     JAVASCRIPT
+================================================== --><script src="../script.js"></script></body>
+</html>
