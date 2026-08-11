@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Amafunguro | Eden Garden</title>
+
+<meta name="description"
+content="Reba amafunguro n'ibinyobwa biboneka muri Eden Garden. Hitamo ibyo ushaka ubikore order kuri WhatsApp.">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/* ==========================================================
+   EDEN FOOD PAGE
+========================================================== */
+
+.food-page{
+    max-width:1200px;
+    margin:auto;
+    padding:25px 12px 60px;
+}
+
+.food-hero{
+    text-align:center;
+    background:#e8f5e9;
+    border-radius:20px;
+    padding:35px 15px;
+    margin-bottom:20px;
+}
+
+.food-hero h2{
+    color:#2e7d32;
+    margin:0 0 10px;
+}
+
+.food-hero p{
+    max-width:720px;
+    margin:auto;
+    line-height:1.7;
+}
+
+
+/* ==========================================================
+   LANGUAGE
+========================================================== */
+
+.food-language{
+    text-align:center;
+    margin:18px 0 25px;
+}
+
+.food-language a{
+    display:inline-block;
+    background:#2e7d32;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.food-language a:hover{
+    background:#1b5e20;
+    transform:translateY(-2px);
+}
+
+
+/* ==========================================================
+   CATEGORIES
+========================================================== */
+
+.food-categories{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.food-categories button{
+    border:0;
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:9px 15px;
+    border-radius:22px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.food-categories button.active{
+    background:#2e7d32;
+    color:#fff;
+}
+
+
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+.food-search{
+    max-width:600px;
+    margin:0 auto 25px;
+}
+
+.food-search input{
+    width:100%;
+    box-sizing:border-box;
+    padding:13px 18px;
+    border:1px solid #ccc;
+    border-radius:25px;
+    font-size:15px;
+    outline:none;
+}
+
+.food-search input:focus{
+    border-color:#2e7d32;
+}
+
+
+/* ==========================================================
+   FOOD GRID
+========================================================== */
+
+.food-grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fill,minmax(145px,1fr));
+    gap:12px;
+}
+
+
+/* ==========================================================
+   FOOD CARD
+========================================================== */
+
+.food-card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:13px;
+    overflow:hidden;
+    box-shadow:0 2px 9px rgba(0,0,0,.10);
+    text-align:center;
+    padding-bottom:10px;
+}
+
+.food-card img{
+    width:100%;
+    height:105px;
+    object-fit:cover;
+    display:block;
+    background:#e8f5e9;
+}
+
+.food-card h3{
+    color:#2e7d32;
+    font-size:15px;
+    margin:9px 4px 4px;
+}
+
+.food-price{
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+.food-card button{
+    border:0;
+    background:#2e7d32;
+    color:#fff;
+    border-radius:18px;
+    padding:7px 12px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+
+/* ==========================================================
+   ORDER
+========================================================== */
+
+.order-section{
+    margin-top:45px;
+    background:#f7faf7;
+    border-radius:20px;
+    padding:25px 15px;
+}
+
+.order-section h2{
+    text-align:center;
+    color:#2e7d32;
+}
+
+.order-search{
+    max-width:600px;
+    margin:15px auto 20px;
+}
+
+.order-search input{
+    width:100%;
+    box-sizing:border-box;
+    padding:12px 15px;
+    border:1px solid #ccc;
+    border-radius:22px;
+}
+
+
+/* ==========================================================
+   ORDER LIST
+========================================================== */
+
+.food-order-list{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fill,minmax(210px,1fr));
+    gap:8px;
+}
+
+.order-item{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:10px;
+}
+
+.order-item-top{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.order-item-top input{
+    width:18px;
+    height:18px;
+}
+
+.order-item-name{
+    flex:1;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.order-item-price{
+    font-size:12px;
+    color:#555;
+}
+
+.quantity-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-top:8px;
+}
+
+.quantity-box button{
+    width:28px;
+    height:28px;
+    border:0;
+    border-radius:50%;
+    background:#e8f5e9;
+    color:#2e7d32;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.quantity-box span{
+    min-width:25px;
+    text-align:center;
+    font-weight:bold;
+}
+
+
+/* ==========================================================
+   SELECTED
+========================================================== */
+
+.selected-box{
+    background:#fff;
+    border-radius:15px;
+    padding:18px;
+    margin-top:25px;
+}
+
+.selected-box h3{
+    color:#2e7d32;
+    margin-top:0;
+}
+
+.selected-row{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:7px 0;
+    border-bottom:1px solid #eee;
+    font-size:14px;
+}
+
+.order-total{
+    text-align:right;
+    font-size:18px;
+    font-weight:bold;
+    color:#2e7d32;
+    margin-top:15px;
+}
+
+
+/* ==========================================================
+   CUSTOMER FORM
+========================================================== */
+
+.customer-form{
+    margin-top:25px;
+    background:#fff;
+    border-radius:15px;
+    padding:18px;
+}
+
+.customer-form label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+.customer-form input,
+.customer-form textarea{
+    width:100%;
+    box-sizing:border-box;
+    margin-top:5px;
+    padding:11px;
+    border:1px solid #ccc;
+    border-radius:9px;
+    font-size:14px;
+}
+
+.customer-form textarea{
+    min-height:90px;
+    resize:vertical;
+}
+
+.send-food-order{
+    width:100%;
+    border:0;
+    background:#2e7d32;
+    color:#fff;
+    padding:13px;
+    border-radius:25px;
+    margin-top:20px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:15px;
+}
+
+
+/* ==========================================================
+   EMPTY
+========================================================== */
+
+.food-empty{
+    grid-column:1/-1;
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:500px){
+
+    .food-page{
+        padding-left:9px;
+        padding-right:9px;
+    }
+
+    .food-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:7px;
+    }
+
+    .food-card img{
+        height:75px;
+    }
+
+    .food-card h3{
+        font-size:12px;
+    }
+
+    .food-price{
+        font-size:11px;
+    }
+
+    .food-card button{
+        font-size:10px;
+        padding:6px 7px;
+    }
+
+    .food-order-list{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:350px){
+
+    .food-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ==========================================================
+     ANNOUNCEMENT
+========================================================== -->
+
+<div class="announcement-bar">
+🍽️ Eden Garden | Amafunguro & Ibinyobwa
+</div>
+
+
+<!-- ==========================================================
+     HEADER
+========================================================== -->
+
+<header class="main-header">
+
+<div class="header-container">
+
+<a href="index.html" class="logo">
+<img
+src="images/logo1.png"
+alt="Vision Garden Company Ltd">
+</a>
+
+
+<div class="brand">
+
+<h1>VISION GARDEN COMPANY LTD</h1>
+
+<p>
+Eden Garden • Amafunguro & Ibinyobwa
+</p>
+
+</div>
+
+
+<div class="header-actions">
+
+<button
+class="search-btn"
+type="button"
+onclick="openSearch()"
+aria-label="Shakisha">
+
+🔍
+
+</button>
+
+<button
+class="menu-btn"
+type="button"
+onclick="toggleMenu()"
+aria-label="Menu">
+
+☰
+
+</button>
+
+</div>
+
+
+<nav id="main-menu">
+
+<a href="index.html">
+🏠 Ahabanza
+</a>
+
+<a href="eden-garden.html">
+🏡 Eden Garden
+</a>
+
+<a href="amafunguro.html">
+🍽️ Amafunguro
+</a>
+
+<a href="serivisi.html">
+🌿 Serivisi
+</a>
+
+<a href="ibiciro.html">
+💰 Ibiciro
+</a>
+
+<a href="amatangazo.html">
+📢 Amatangazo
+</a>
+
+<a href="promosiyo.html">
+🔥 Promosiyo
+</a>
+
+<a href="amashusho.html">
+📸 Amafoto & Videos
+</a>
+
+<a href="about.html">
+👥 Abo Turibo
+</a>
+
+<a href="twandikire.html">
+📞 Twandikire
+</a>
+
+<button
+type="button"
+class="menu-order-btn"
+onclick="scrollToFoodOrder();toggleMenu();">
+
+🛒 Tumiza Amafunguro
+
+</button>
+
+</nav>
+
+</div>
+
+
+<div
+id="search-container"
+class="search-container">
+
+<input
+type="search"
+id="site-search"
+placeholder="Shakisha serivisi cyangwa ibicuruzwa...">
+
+<button
+type="button"
+onclick="performSearch()">
+
+🔍 Shakisha
+
+</button>
+
+</div>
+
+</header>
+
+
+<!-- ==========================================================
+     LANGUAGE
+========================================================== -->
+
+<div class="food-language">
+
+<a href="english/amafunguro.html">
+🇬🇧 English Version
+</a>
+
+</div>
+
+
+<!-- ==========================================================
+     MAIN
+========================================================== -->
+
+<main class="food-page">
+
+
+<section class="food-hero">
+
+<h2>🍽️ Amafunguro ya Eden Garden</h2>
+
+<p>
+Murakaza neza muri Eden Garden.
+Reba amafunguro n'ibinyobwa bitandukanye,
+hitamo ibyo ushaka hanyuma ukore order yawe.
+</p>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<div class="food-categories">
+
+<button
+class="active"
+onclick="filterFood('all',this)">
+🍽️ Byose
+</button>
+
+<button
+onclick="filterFood('main',this)">
+🍛 Amafunguro
+</button>
+
+<button
+onclick="filterFood('fast',this)">
+🍟 Fast Food
+</button>
+
+<button
+onclick="filterFood('meat',this)">
+🥩 Inyama
+</button>
+
+<button
+onclick="filterFood('fish',this)">
+🐟 Amafi
+</button>
+
+<button
+onclick="filterFood('drink',this)">
+🥤 Ibinyobwa
+</button>
+
+<button
+onclick="filterFood('hot',this)">
+☕ Ibinyobwa bishyushye
+</button>
+
+</div>
+
+
+<!-- SEARCH -->
+
+<div class="food-search">
+
+<input
+type="search"
+id="foodSearch"
+placeholder="🔍 Shakisha ifunguro..."
+oninput="renderFoods()">
+
+</div>
+
+
+<!-- FOOD GRID -->
+
+<section>
+
+<div
+id="foodGrid"
+class="food-grid">
+</div>
+
+</section>
+
+
+<!-- ==========================================================
+     ORDER
+========================================================== -->
+
+<section
+class="order-section"
+id="foodOrderSection">
+
+<h2>
+🛒 Hitamo ibyo ushaka gutumiza
+</h2>
+
+<p style="text-align:center;">
+Ushobora guhitamo amafunguro menshi icyarimwe.
+</p>
+
+
+<div class="order-search">
+
+<input
+type="search"
+id="orderSearch"
+placeholder="🔍 Shakisha muri lisiti y'amafunguro..."
+oninput="renderOrderList()">
+
+</div>
+
+
+<div
+id="foodOrderList"
+class="food-order-list">
+</div>
+
+
+<!-- SELECTED -->
+
+<div class="selected-box">
+
+<h3>
+📋 Ibyo wahisemo
+</h3>
+
+<div id="selectedFoodItems">
+
+<p>
+Nta funguro wahisemo.
+</p>
+
+</div>
+
+<div class="order-total">
+
+Total:
+<span id="foodTotal">0</span> Frw
+
+</div>
+
+</div>
+
+
+<!-- CUSTOMER -->
+
+<div class="customer-form">
+
+<h3>
+📝 Amakuru yawe
+</h3>
+
+
+<label for="foodName">
+Amazina
+</label>
+
+<input
+type="text"
+id="foodName"
+placeholder="Andika amazina yawe">
+
+
+<label for="foodPhone">
+Telefoni
+</label>
+
+<input
+type="tel"
+id="foodPhone"
+placeholder="07XXXXXXXX">
+
+
+<label for="foodDate">
+📅 Itariki
+</label>
+
+<input
+type="date"
+id="foodDate">
+
+
+<label for="foodTime">
+🕐 Isaha
+</label>
+
+<input
+type="time"
+id="foodTime">
+
+
+<label for="foodPeople">
+👥 Umubare w'abantu
+</label>
+
+<input
+type="number"
+id="foodPeople"
+min="1"
+value="1">
+
+
+<label for="foodNote">
+✍️ Icyitonderwa
+</label>
+
+<textarea
+id="foodNote"
+placeholder="Hari ikindi ushaka kutubwira?"></textarea>
+
+
+<button
+type="button"
+class="send-food-order"
+onclick="sendFoodOrder()">
+
+📲 Ohereza Order kuri WhatsApp
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="vision-footer">
+
+<h3>
+🌱 Vision Garden Company Ltd
+</h3>
+
+<p>
+Eden Garden • Amafunguro • Ibinyobwa •
+Kuruhuka no Kwidagadura
+</p>
+
+
+<div class="footer-links">
+
+<a href="index.html">🏠 Ahabanza</a>
+
+<a href="eden-garden.html">🏡 Eden Garden</a>
+
+<a href="amafunguro.html">🍽️ Amafunguro</a>
+
+<a href="serivisi.html">🌿 Serivisi</a>
+
+<a href="ibiciro.html">💰 Ibiciro</a>
+
+<a href="amatangazo.html">📢 Amatangazo</a>
+
+<a href="promosiyo.html">🔥 Promosiyo</a>
+
+<a href="amashusho.html">📸 Amafoto</a>
+
+<a href="about.html">👥 Abo Turibo</a>
+
+<a href="twandikire.html">📞 Twandikire</a>
+
+</div>
+
+
+<p class="copyright">
+
+© 2026 Vision Garden Company Ltd.
+Uburenganzira bwose burabitswe.
+
+</p>
+
+</footer>
+
+
+<!-- ==========================================================
+     FLOATING BUTTONS
+========================================================== -->
+
+<div class="floating-buttons">
+
+<a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="whatsapp-float"
+aria-label="WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<a
+href="tel:+250781632705"
+class="phone-float"
+aria-label="Hamagara">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+/* ==========================================================
+   EDEN FOOD LIST
+========================================================== */
+
+const edenFoods = [
+
+{name:"Inkoko",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inkoko n'umuceri",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inkoko n'amafiriti",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inkoko n'imboga",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Inyama z'inka",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inyama z'inka n'umuceri",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inyama z'inka n'amafiriti",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inyama z'inka n'imboga",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Ifi",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Ifi n'umuceri",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Ifi n'amafiriti",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Ifi n'imboga",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Umuceri",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umuceri n'ibishyimbo",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umuceri n'imboga",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Ibishyimbo",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Isombe",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Ubugali",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Ibirayi",category:"main",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Amafiriti",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Chips Mayai",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Burger",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Chicken Burger",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Beef Burger",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Sandwich",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Chicken Sandwich",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Pizza",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Sausage",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Samosa",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Spring Rolls",category:"fast",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Brochette",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Brochette y'inka",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Brochette y'inkoko",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inyama y'ihene",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Brochette y'ihene",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inyama zokeje",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Inyama zokeje mu mavuta",category:"meat",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Ifi yokeje",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Ifi ikaranze",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Fish Fillet",category:"fish",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Ikawa",category:"hot",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Icyayi",category:"hot",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Icyayi kirimo amata",category:"hot",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Icyayi cya Tangawizi",category:"hot",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Icyayi cy'indimu",category:"hot",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Amata ashyushye",category:"hot",price:1000,image:"images/food-placeholder.jpg"},
+
+{name:"Umutobe w'imbuto",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umutobe w'umwembe",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umutobe wa Passion",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umutobe w'inanasi",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umutobe w'amacunga",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umutobe wa Avoka",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Umutobe w'indimu",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Amazi",category:"drink",price:1000,image:"images/food-placeholder.jpg"},
+{name:"Soda",category:"drink",price:1000,image:"images/food-placeholder.jpg"}
+
+];
+
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+let currentFoodCategory = "all";
+let selectedFoods = {};
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+function foodImage(item){
+
+    return item.image || "images/food-placeholder.jpg";
+
+}
+
+
+/* ==========================================================
+   FILTER
+========================================================== */
+
+function filterFood(category,button){
+
+    currentFoodCategory = category;
+
+    document
+    .querySelectorAll(".food-categories button")
+    .forEach(function(btn){
+        btn.classList.remove("active");
+    });
+
+    if(button){
+        button.classList.add("active");
+    }
+
+    renderFoods();
+
+}
+
+
+/* ==========================================================
+   RENDER FOOD CARDS
+========================================================== */
+
+function renderFoods(){
+
+    const grid =
+        document.getElementById("foodGrid");
+
+    const input =
+        document.getElementById("foodSearch");
+
+    const search =
+        input.value.toLowerCase().trim();
+
+
+    const filtered =
+        edenFoods.filter(function(item){
+
+            const categoryOK =
+                currentFoodCategory === "all" ||
+                item.category === currentFoodCategory;
+
+            const searchOK =
+                item.name.toLowerCase()
+                .includes(search);
+
+            return categoryOK && searchOK;
+
+        });
+
+
+    grid.innerHTML = "";
+
+
+    if(!filtered.length){
+
+        grid.innerHTML = `
+            <div class="food-empty">
+                🔍 Nta funguro ribonetse.
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    filtered.forEach(function(item){
+
+        const index =
+            edenFoods.indexOf(item);
+
+        const card =
+            document.createElement("article");
+
+        card.className = "food-card";
+
+        card.innerHTML = `
+
+            <img
+                src="${foodImage(item)}"
+                alt="${item.name}"
+                onerror="this.src='images/food-placeholder.jpg'"
+            >
+
+            <h3>${item.name}</h3>
+
+            <div class="food-price">
+                ${item.price.toLocaleString()} Frw
+            </div>
+
+            <button
+                type="button"
+                onclick="selectFood(${index})">
+
+                🛒 Tumiza
+
+            </button>
+        `;
+
+        grid.appendChild(card);
+
+    });
+
+}
+
+
+/* ==========================================================
+   SELECT
+========================================================== */
+
+function selectFood(index){
+
+    selectedFoods[index] =
+        (selectedFoods[index] || 0) + 1;
+
+    renderOrderList();
+
+    updateSelectedFoods();
+
+    scrollToFoodOrder();
+
+}
+
+
+/* ==========================================================
+   ORDER LIST
+========================================================== */
+
+function renderOrderList(){
+
+    const box =
+        document.getElementById("foodOrderList");
+
+    const input =
+        document.getElementById("orderSearch");
+
+    const search =
+        input.value.toLowerCase().trim();
+
+
+    const filtered =
+        edenFoods.filter(function(item){
+
+            return item.name
+            .toLowerCase()
+            .includes(search);
+
+        });
+
+
+    box.innerHTML = "";
+
+
+    filtered.forEach(function(item){
+
+        const index =
+            edenFoods.indexOf(item);
+
+        const quantity =
+            selectedFoods[index] || 0;
+
+
+        const row =
+            document.createElement("div");
+
+        row.className = "order-item";
+
+
+        row.innerHTML = `
+
+            <div class="order-item-top">
+
+                <input
+                    type="checkbox"
+                    ${quantity > 0 ? "checked" : ""}
+                    onchange="toggleFood(${index},this.checked)">
+
+                <span class="order-item-name">
+                    ${item.name}
+                </span>
+
+                <span class="order-item-price">
+                    ${item.price.toLocaleString()} Frw
+                </span>
+
+            </div>
+
+
+            <div class="quantity-box">
+
+                <button
+                    type="button"
+                    onclick="changeFoodQuantity(${index},-1)">
+                    −
+                </button>
+
+                <span>${quantity}</span>
+
+                <button
+                    type="button"
+                    onclick="changeFoodQuantity(${index},1)">
+                    +
+                </button>
+
+            </div>
+        `;
+
+        box.appendChild(row);
+
+    });
+
+}
+
+
+/* ==========================================================
+   CHECKBOX
+========================================================== */
+
+function toggleFood(index,checked){
+
+    if(checked){
+
+        if(!selectedFoods[index]){
+            selectedFoods[index] = 1;
+        }
+
+    }else{
+
+        delete selectedFoods[index];
+
+    }
+
+    renderOrderList();
+
+    updateSelectedFoods();
+
+}
+
+
+/* ==========================================================
+   QUANTITY
+========================================================== */
+
+function changeFoodQuantity(index,amount){
+
+    let quantity =
+        selectedFoods[index] || 0;
+
+    quantity += amount;
+
+
+    if(quantity <= 0){
+
+        delete selectedFoods[index];
+
+    }else{
+
+        selectedFoods[index] = quantity;
+
+    }
+
+
+    renderOrderList();
+
+    updateSelectedFoods();
+
+}
+
+
+/* ==========================================================
+   SELECTED ITEMS
+========================================================== */
+
+function updateSelectedFoods(){
+
+    const box =
+        document.getElementById("selectedFoodItems");
+
+    const totalBox =
+        document.getElementById("foodTotal");
+
+
+    const indexes =
+        Object.keys(selectedFoods);
+
+
+    if(!indexes.length){
+
+        box.innerHTML =
+            "<p>Nta funguro wahisemo.</p>";
+
+        totalBox.textContent = "0";
+
+        return;
+
+    }
+
+
+    let total = 0;
+
+    box.innerHTML = "";
+
+
+    indexes.forEach(function(index){
+
+        const item =
+            edenFoods[index];
+
+        const quantity =
+            selectedFoods[index];
+
+        const subtotal =
+            item.price * quantity;
+
+        total += subtotal;
+
+
+        const row =
+            document.createElement("div");
+
+        row.className = "selected-row";
+
+
+        row.innerHTML = `
+
+            <span>
+                ${item.name} × ${quantity}
+            </span>
+
+            <strong>
+                ${subtotal.toLocaleString()} Frw
+            </strong>
+
+        `;
+
+        box.appendChild(row);
+
+    });
+
+
+    totalBox.textContent =
+        total.toLocaleString();
+
+}
+
+
+/* ==========================================================
+   TOTAL
+========================================================== */
+
+function getFoodTotal(){
+
+    let total = 0;
+
+
+    Object.keys(selectedFoods)
+    .forEach(function(index){
+
+        total +=
+            edenFoods[index].price *
+            selectedFoods[index];
+
+    });
+
+
+    return total;
+
+}
+
+
+/* ==========================================================
+   SCROLL
+========================================================== */
+
+function scrollToFoodOrder(){
+
+    const section =
+        document.getElementById(
+            "foodOrderSection"
+        );
+
+
+    if(section){
+
+        section.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+
+    }
+
+}
+
+
+/* ==========================================================
+   SEND ORDER
+========================================================== */
+
+function sendFoodOrder(){
+
+    const name =
+        document.getElementById("foodName")
+        .value.trim();
+
+    const phone =
+        document.getElementById("foodPhone")
+        .value.trim();
+
+    const date =
+        document.getElementById("foodDate").value;
+
+    const time =
+        document.getElementById("foodTime").value;
+
+    const people =
+        document.getElementById("foodPeople").value;
+
+    const note =
+        document.getElementById("foodNote")
+        .value.trim();
+
+
+    const indexes =
+        Object.keys(selectedFoods);
+
+
+    if(!indexes.length){
+
+        alert(
+            "Banza uhitemo nibura ifunguro rimwe."
+        );
+
+        scrollToFoodOrder();
+
+        return;
+
+    }
+
+
+    if(!name || !phone){
+
+        alert(
+            "Uzuza amazina na telefoni mbere yo kohereza order."
+        );
+
+        return;
+
+    }
+
+
+    let message =
+        "🏡 *EDEN GARDEN - ORDER*\n\n";
+
+
+    message +=
+        "👤 Amazina: " +
+        name + "\n";
+
+    message +=
+        "📞 Telefoni: " +
+        phone + "\n";
+
+    message +=
+        "📅 Itariki: " +
+        (date || "Ntabwo yatanzwe") + "\n";
+
+    message +=
+        "🕐 Isaha: " +
+        (time || "Ntabwo yatanzwe") + "\n";
+
+    message +=
+        "👥 Abantu: " +
+        people + "\n\n";
+
+
+    message +=
+        "🍽️ *IBYO NATUMIJE:*\n";
+
+
+    indexes.forEach(function(index){
+
+        const item =
+            edenFoods[index];
+
+        const quantity =
+            selectedFoods[index];
+
+        const subtotal =
+            item.price * quantity;
+
+
+        message +=
+            "• " +
+            item.name +
+            " × " +
+            quantity +
+            " = " +
+            subtotal.toLocaleString() +
+            " Frw\n";
+
+    });
+
+
+    message +=
+        "\n💰 *TOTAL: " +
+        getFoodTotal().toLocaleString() +
+        " Frw*\n";
+
+
+    if(note){
+
+        message +=
+            "\n📝 Icyitonderwa:\n" +
+            note;
+
+    }
+
+
+    message +=
+        "\n\nMurakoze guhitamo Eden Garden. 🌿";
+
+
+    const whatsapp =
+        "250781632705";
+
+
+    window.open(
+        "https://wa.me/" +
+        whatsapp +
+        "?text=" +
+        encodeURIComponent(message),
+        "_blank"
+    );
+
+}
+
+
+/* ==========================================================
+   START
+========================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        renderFoods();
+
+        renderOrderList();
+
+        updateSelectedFoods();
+
+    }
+);
+
+</script>
+
+</body>
+</html>

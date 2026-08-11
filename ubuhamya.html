@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="rw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ubuhamya bw'Abakiriya | Vision Garden Company Ltd</title><meta name="description"
+content="Soma ubuhamya bw'abakiriya ba Vision Garden Company Ltd na Eden Garden kandi usangize natwe ubunararibonye bwawe.">
+
+<link rel="stylesheet" href="style.css"><link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head><body><!-- ==================================================
+     ANNOUNCEMENT BAR
+================================================== --><div class="announcement-bar">⭐ Murakaza neza kuri Vision Garden Company Ltd
+| 🌱 Ubuhamya bw'abakiriya bacu
+| 🏡 Eden Garden
+
+</div><!-- ==================================================
+     HEADER
+================================================== --><header class="main-header"><div class="header-container"><!-- LOGO --><div class="logo"><img
+src="images/logo1.png"
+alt="Vision Garden Company Ltd Logo">
+
+</div><!-- BRAND --><div class="brand"><h1>
+Vision Garden Company Ltd
+</h1><p>
+Pepiniyeri y'ibiti byiza mu Rwanda
+</p></div><!-- HEADER ACTIONS --><div class="header-actions"><button
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Fungura menu">
+
+☰
+
+</button><button
+class="search-btn"
+onclick="openSearch()"
+aria-label="Shakisha">
+
+🔍
+
+</button></div><!-- SEARCH --><div
+class="search-container"
+id="searchBox"><input
+type="text"
+id="searchInput"
+placeholder="Shakisha serivisi cyangwa ibicuruzwa...">
+
+<button onclick="searchSite()">Shaka
+
+</button></div></div><!-- ==================================================
+     MAIN MENU
+================================================== --><nav id="main-menu"><a href="index.html">
+🏠 Ahabanza
+</a><a href="edeni-garden.html">
+🏡 Eden Garden
+</a><a href="amashusho.html">
+📸 Amafoto & Videos
+</a><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision'); toggleMenu();">
+
+🛒 Tumiza (Vision)
+
+</button><button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden'); toggleMenu();">
+
+🍽️ Tumiza (Eden)
+
+</button><a href="ubuhamya.html">
+⭐ Ubuhamya
+</a><a href="amatangazo.html">
+📢 Amatangazo
+</a><a href="promosiyo.html">
+🎁 Promosiyo
+</a><a href="about.html">
+👥 Abo Turibo
+</a><a href="twandikire.html">
+📞 Twandikire
+</a></nav></header><!-- ==================================================
+     LANGUAGE
+================================================== --><div class="language-box"><a
+href="english/ubuhamya.html"
+class="english-btn">
+
+🇬🇧 English Version
+
+</a></div><!-- ==================================================
+     HERO / INTRO
+================================================== --><section class="intro-section testimonial-intro"><h2>
+⭐ Ubuhamya bw'Abakiriya Bacu
+</h2><p>
+Abakiriya bacu ni ingenzi kuri twe.Hano dusangiza abandi ibitekerezo
+n'ubunararibonye by'abakiriya bacu
+bamaze gukorana na Vision Garden
+Company Ltd cyangwa gusura Eden Garden.
+
+</p><div class="rating-summary"><div class="rating-stars">
+⭐⭐⭐⭐⭐
+</div><strong>
+Ubuhamya bw'abakiriya bacu
+</strong><span>
+Ubuhamya bushya bubanza kugenzurwa
+mbere yo kugaragara kuri website.
+</span></div></section><!-- ==================================================
+     FILTER
+================================================== --><section class="testimonial-filter"><h2>
+Reba Ubuhamya
+</h2><div class="testimonial-filter-buttons"><button
+type="button"
+class="testimonial-filter-btn active"
+onclick="filterTestimonials('all')">
+
+⭐ Byose
+
+</button><button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterTestimonials('vision')">
+
+🌱 Vision Garden
+
+</button><button
+type="button"
+class="testimonial-filter-btn"
+onclick="filterTestimonials('eden')">
+
+🏡 Eden Garden
+
+</button></div></section><!-- ==================================================
+     APPROVED TESTIMONIALS
+================================================== --><section class="testimonials-section"><h2>
+💬 Ibyo Abakiriya Bavuga
+</h2><div
+id="testimonialList"
+class="testimonial-grid"><!-- TESTIMONIAL 1 --><article
+class="testimonial-card"
+data-type="vision"><div class="testimonial-stars">
+⭐⭐⭐⭐⭐
+</div><div class="testimonial-icon">
+🌱
+</div><p class="testimonial-text">“Nishimiye uburyo Vision Garden
+yampaye ingemwe nziza ndetse
+nkahabwa n'inama z'uko nazitera
+no kuzitaho.”
+
+</p><div class="testimonial-author"><strong>
+Umukiriya wa Vision Garden
+</strong><span>
+🌱 Vision Garden
+</span></div></article><!-- TESTIMONIAL 2 --><article
+class="testimonial-card"
+data-type="eden"><div class="testimonial-stars">
+⭐⭐⭐⭐⭐
+</div><div class="testimonial-icon">
+🏡
+</div><p class="testimonial-text">“Eden Garden ni ahantu heza ho
+kuruhukira no gusangira n'inshuti
+n'umuryango. Twishimiye serivisi
+twahawe.”
+
+</p><div class="testimonial-author"><strong>
+Umushyitsi wa Eden Garden
+</strong><span>
+🏡 Eden Garden
+</span></div></article><!-- TESTIMONIAL 3 --><article
+class="testimonial-card"
+data-type="vision"><div class="testimonial-stars">
+⭐⭐⭐⭐⭐
+</div><div class="testimonial-icon">
+🌿
+</div><p class="testimonial-text">“Bamfashije guhitamo ibiti
+bikwiye ahantu nashakaga gutera.
+Nashimye cyane ubujyanama
+bampaye.”
+
+</p><div class="testimonial-author"><strong>
+Umukiriya wa Vision Garden
+</strong><span>
+🌱 Vision Garden
+</span></div></article></div></section><!-- ==================================================
+     SUBMIT TESTIMONIAL
+================================================== --><section class="testimonial-submit-section"><div class="testimonial-submit-box"><h2>
+💬 Sangiza Natwe Ubunararibonye Bwawe
+</h2><p>
+Waba waraguze ibicuruzwa bya Vision Garden
+cyangwa warasuye Eden Garden?Tubwire uko watwishimiye n'icyo twakongeraho.
+
+</p><form
+id="testimonialForm"
+class="testimonial-form"
+onsubmit="submitTestimonial(event)"><!-- NAME --><label for="testimonialName">
+👤 Amazina yawe
+</label><input
+type="text"
+id="testimonialName"
+name="name"
+placeholder="Andika amazina yawe"
+required>
+
+<!-- PHONE --><label for="testimonialPhone">
+📱 Telefoni
+</label><input
+type="tel"
+id="testimonialPhone"
+name="phone"
+placeholder="078..."
+required>
+
+<!-- TYPE --><label for="testimonialType">
+🏡 Serivisi wakoresheje
+</label><select
+id="testimonialType"
+name="type"
+required>
+
+<option value="">
+-- Hitamo --
+</option><option value="vision">
+🌱 Vision Garden
+</option><option value="eden">
+🏡 Eden Garden
+</option></select><!-- RATING --><label>
+⭐ Uko watwishimiye
+</label><div class="rating-input"><label><input
+type="radio"
+name="rating"
+value="1"
+required>
+
+⭐
+
+</label><label><input
+type="radio"
+name="rating"
+value="2">
+
+⭐⭐
+
+</label><label><input
+type="radio"
+name="rating"
+value="3">
+
+⭐⭐⭐
+
+</label><label><input
+type="radio"
+name="rating"
+value="4">
+
+⭐⭐⭐⭐
+
+</label><label><input
+type="radio"
+name="rating"
+value="5">
+
+⭐⭐⭐⭐⭐
+
+</label></div><!-- MESSAGE --><label for="testimonialMessage">
+✍️ Ubuhamya bwawe
+</label><textarea
+id="testimonialMessage"
+name="message"
+rows="6"
+placeholder="Andika ubunararibonye bwawe hano..."
+required></textarea><!-- CONSENT --><label class="testimonial-consent"><input
+type="checkbox"
+id="testimonialConsent"
+required>
+
+Nemeye ko ubuhamya bwanjye bushobora
+kugaragara kuri website nyuma yo kugenzurwa
+no kwemezwa na Vision Garden Company Ltd.
+
+</label><button
+type="submit"
+class="main-btn">
+
+⭐ Ohereza Ubuhamya
+
+</button></form><!-- PENDING MESSAGE --><div
+id="testimonialPendingMessage"
+class="testimonial-pending"
+style="display:none;">⏳ <strong>Murakoze!</strong>
+
+Ubuhamya bwawe twabwakiriye.
+Buzabanza kugenzurwa mbere yo
+kugaragara kuri website.
+
+</div></div></section><!-- ==================================================
+     WHATSAPP CTA
+================================================== --><section class="contact-cta"><h2>
+📲 Ushaka kutubwira byinshi?
+</h2><p>
+Niba ufite ikibazo cyangwa ushaka
+kutuganiriza ku gitekerezo cyawe,
+ushobora kutwandikira kuri WhatsApp.
+</p><div class="cta-buttons"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="main-btn">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Twandikire kuri WhatsApp
+
+</a><a
+href="twandikire.html"
+class="main-btn">
+
+📞 Twandikire
+
+</a></div></section><!-- ==================================================
+     FOOTER
+================================================== --><footer class="vision-footer"><h3>
+🌱 Vision Garden Company Ltd
+</h3><p>
+Pepiniyeri y'ibiti byiza mu Rwanda,
+gutunganya ubusitani ndetse na
+serivisi nziza za Eden Garden.
+</p><div class="footer-links"><a href="index.html">
+🏠 Ahabanza
+</a><a href="ibicuruzwa.html">
+🌱 Ibicuruzwa
+</a><a href="serivisi.html">
+🌿 Serivisi
+</a><a href="edeni-garden.html">
+🏡 Eden Garden
+</a><a href="amashusho.html">
+📸 Amafoto & Videos
+</a><a href="about.html">
+👥 Abo Turibo
+</a><a href="twandikire.html">
+📞 Twandikire
+</a></div><!-- SOCIAL FOOTER --><div class="footer-social"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a><a
+href="tel:0781632705">
+
+<i class="fa-solid fa-phone"></i>
+
+</a></div><p class="copyright">© 2026 Vision Garden Company Ltd.
+Uburenganzira bwose burabitswe.
+
+</p></footer><!-- ==================================================
+     FLOATING BUTTONS
+================================================== --><div class="floating-buttons"><a
+href="https://wa.me/250781632705"
+target="_blank"
+rel="noopener"
+class="whatsapp-float">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a><a
+href="tel:0781632705"
+class="phone-float">
+
+<i class="fa-solid fa-phone"></i>
+
+</a></div><!-- ==================================================
+     JAVASCRIPT
+================================================== --><script src="script.js"></script></body>
+</html>
