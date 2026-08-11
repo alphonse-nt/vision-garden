@@ -1,0 +1,361 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Prices | Vision Garden Company Ltd</title><meta name="description"
+content="View prices of products and services available at Vision Garden Company Ltd and Eden Garden.">
+
+<link rel="stylesheet" href="../style.css">
+</head><body><!-- ==========================================================
+     ANNOUNCEMENT BAR
+========================================================== --><div class="announcement-bar">
+🌱 Vision Garden Company Ltd | 🌿 Products | 🏡 Eden Garden | 💰 Prices
+</div><!-- ==========================================================
+     HEADER
+========================================================== --><header class="main-header"><div class="header-container"><div class="logo">
+<img src="../logo.png" alt="Vision Garden Company Ltd Logo">
+</div><div class="brand">
+<h1>VISION GARDEN COMPANY LTD</h1>
+<p>Prices of products and services</p>
+</div><div class="header-actions"><button
+class="search-btn"
+type="button"
+onclick="openSearch()">
+🔍
+</button>
+
+<button
+class="menu-btn"
+type="button"
+onclick="toggleMenu()">
+☰
+</button>
+
+</div></div><!-- ==========================================================
+     NAVIGATION
+========================================================== --><nav id="main-menu"><a href="index.html">🏠 Home</a>
+
+<a href="eden-garden.html">🏡 Eden Garden</a>
+
+<a href="serivisi.html">🌿 Services</a>
+
+<a href="ibiciro.html">💰 Prices</a>
+
+<a href="ibicuruzwa.html">🌱 Products</a>
+
+<a href="amashusho.html">📸 Photos & Videos</a>
+
+<a href="ubuhamya.html">⭐ Testimonials</a>
+
+<a href="amatangazo.html">📢 Announcements</a>
+
+<a href="poromosiyo.html">🔥 Promotions</a>
+
+<a href="about.html">👥 About Us</a>
+
+<a href="twandikire.html">📞 Contact Us</a>
+
+<button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('vision')">
+🛒 Order Products
+</button>
+
+<button
+type="button"
+class="menu-order-btn"
+onclick="openUniversalOrder('eden')">
+🍽️ Order from Eden Garden
+</button>
+
+</nav><!-- ==========================================================
+     SEARCH
+========================================================== --><div class="search-container" id="search-container"><input
+type="text"
+id="siteSearchInput"
+placeholder="Search services or products...">
+
+<button
+type="button"
+onclick="performSiteSearch()">
+🔍 Search
+</button>
+
+</div></header><!-- ==========================================================
+     LANGUAGE
+========================================================== --><div class="language-box"><a
+href="../ibiciro.html"
+class="english-btn"
+style="background:#2e7d32;">
+🇷🇼 Kinyarwanda Version
+</a>
+
+</div><!-- ==========================================================
+     PRICES INTRO
+========================================================== --><section class="intro-section"><h2>💰 VISION GARDEN & EDEN GARDEN PRICES</h2><p>
+Here you can view prices of products, services and other items
+available at Vision Garden Company Ltd and Eden Garden.
+Choose what you need, check the price and place your order
+through WhatsApp.
+</p></section><!-- ==========================================================
+     PRICE CATEGORY
+========================================================== --><section class="popular-section"><div class="media-type-buttons"><button
+class="media-type-btn active"
+type="button"
+onclick="showPriceCategory('vision')">
+🌱 Vision Garden
+</button>
+
+<button
+class="media-type-btn"
+type="button"
+onclick="showPriceCategory('eden')">
+🏡 Eden Garden
+</button>
+
+</div><!-- ==========================================================
+     SEARCH PRODUCTS
+========================================================== --><div class="search-container"
+style="position:relative;top:auto;right:auto;margin:20px auto;display:flex;"><input
+type="text"
+id="priceSearch"
+placeholder="Search Mango, Avocado, Lemon...">
+
+<button
+type="button"
+onclick="filterPriceProducts()">
+🔍 Search
+</button>
+
+</div><!-- ==========================================================
+     ALPHABET FILTER
+========================================================== --><div class="media-type-buttons"><button class="media-type-btn active" type="button">ALL</button>
+<button class="media-type-btn" type="button">ABC</button>
+<button class="media-type-btn" type="button">DEF</button>
+<button class="media-type-btn" type="button">GHI</button>
+<button class="media-type-btn" type="button">JKL</button>
+<button class="media-type-btn" type="button">MNO</button>
+<button class="media-type-btn" type="button">PQR</button>
+<button class="media-type-btn" type="button">STU</button>
+<button class="media-type-btn" type="button">VWX</button>
+<button class="media-type-btn" type="button">YZ</button>
+
+</div><!-- ==========================================================
+     VISION GARDEN PRODUCTS
+========================================================== --><div
+class="card-grid"
+id="vision-price-products"><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🥑
+</div><h3>Avocado</h3><p>Avocado seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍊
+</div><h3>Orange</h3><p>Orange seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍎
+</div><h3>Apple</h3><p>Apple seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍍
+</div><h3>Pineapple</h3><p>Pineapple seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍌
+</div><h3>Banana</h3><p>Banana seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍊
+</div><h3>Clementine</h3><p>Clementine seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍑
+</div><h3>Apricot</h3><p>Apricot seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍎
+</div><h3>Pomegranate</h3><p>Pomegranate seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🌿
+</div><h3>Figs</h3><p>Fig seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍈
+</div><h3>Guava</h3><p>Guava seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍎
+</div><h3>Grenade</h3><p>Grenade seedling</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div><div class="product-card"><div style="font-size:60px;padding:30px 10px;background:#f5f8f5;">
+🍇
+</div><h3>Grape Seedlings</h3><p>Grape seedlings</p><p><strong>1,000 Frw</strong></p><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 Order
+</button>
+
+</div></div><!-- ==========================================================
+     PAGINATION
+========================================================== --><div
+class="media-type-buttons"
+style="margin-top:30px;"><button class="media-type-btn" type="button">
+⬅️
+</button><button class="media-type-btn active" type="button">1</button>
+
+<button class="media-type-btn" type="button">2</button>
+
+<button class="media-type-btn" type="button">3</button>
+
+<button class="media-type-btn" type="button">4</button>
+
+<button class="media-type-btn" type="button">
+Continue ➡️
+</button></div></section><!-- ==========================================================
+     ORDER CTA
+========================================================== --><section class="contact-cta"><h2>🛒 Did You Find What You Need?</h2><p>
+Select the products or services you need and click the order button.
+We will receive your request through WhatsApp and respond to you.
+</p><div class="cta-buttons"><button
+class="main-btn"
+type="button"
+onclick="openUniversalOrder('vision')">
+🛒 ORDER NOW
+</button>
+
+</div></section><!-- ==========================================================
+     UNIVERSAL ORDER MODAL
+========================================================== --><div
+class="order-modal"
+id="universalOrderModal"><div class="order-modal-box"><button
+class="order-close"
+type="button"
+onclick="closeUniversalOrder()">
+×
+</button>
+
+<div class="order-header"><h2 id="universalOrderTitle">
+🌱 Vision Garden Order
+</h2><p>
+Choose the products or services you need.
+</p></div><div class="order-progress"><span class="active">1</span>
+<span>2</span>
+<span>3</span>
+
+</div><div
+class="universal-order-step"
+id="universalOrderStep1"><h3>📋 Choose What You Need</h3><div
+class="order-products"
+id="universalOrderProducts"><!-- Products are loaded by script.js --></div><div class="order-step-buttons"><button
+class="order-next"
+type="button"
+onclick="nextUniversalOrderStep()">
+Continue ➡️
+</button>
+
+</div></div></div></div><!-- ==========================================================
+     FOOTER
+========================================================== --><footer class="vision-footer"><h3>🌱 Vision Garden Company Ltd</h3><p>
+Fruit seedlings, forest trees, flowers, gardening,
+landscaping, advisory services and Eden Garden services.
+</p><div class="footer-links"><a href="index.html">🏠 Home</a>
+
+<a href="ibicuruzwa.html">🌱 Products</a>
+
+<a href="serivisi.html">🌿 Services</a>
+
+<a href="ibiciro.html">💰 Prices</a>
+
+<a href="eden-garden.html">🏡 Eden Garden</a>
+
+<a href="amashusho.html">📸 Photos</a>
+
+<a href="ubuhamya.html">⭐ Testimonials</a>
+
+<a href="amatangazo.html">📢 Announcements</a>
+
+<a href="poromosiyo.html">🔥 Promotions</a>
+
+<a href="about.html">👥 About Us</a>
+
+<a href="twandikire.html">📞 Contact Us</a>
+
+</div><p class="copyright">
+© 2026 Vision Garden Company Ltd. All rights reserved.
+</p></footer><!-- ==========================================================
+     FLOATING BUTTONS
+========================================================== --><div class="floating-buttons"><a
+class="whatsapp-float"
+href="https://wa.me/250781632705"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
+<a
+class="phone-float"
+href="tel:+250781632705"
+aria-label="Call Vision Garden">
+📞
+</a>
+
+</div><!-- ==========================================================
+     JAVASCRIPT
+========================================================== --><script src="../script.js"></script></body>
+</html>
